@@ -3,8 +3,8 @@ import olabrecq from '../assets/img/olabrecq.jpg'
 
 function About() {
 	return (
-		<div className='min-h-full bg-black py-16 about-page'>
-			<div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+		<div className='min-h-full py-16 about-page'>
+			<div className="container m-auto px-6 md:px-12 xl:px-6">
 				<div className='md:1/12 lg:1/12'>
 					<p className='mt-5 text-center text-[#FFFBDC]'>I am</p>
 				</div>
@@ -17,7 +17,7 @@ function About() {
 					</div>
 				</div>
 				<div>
-					<p className="mt-6 text-[#FFFBDC] text-center">Programming student & Web developer</p>
+					<p className="mt-6 mx-6 text-[#FFFBDC] text-center">Programming student & Web developer</p>
 				</div>
 			</div>
 		</div>
