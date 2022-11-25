@@ -9,15 +9,34 @@
 	transition: 0.6s;
 }
 
-.about-card:hover  .description {
+/* .about-card:hover  .description {
 	transition: 0.6s;
 	display: block;
 	text-align: justify;
 	width: 500px;
 	
-}
+} */
 
 .name {
 	left: 44%;
 	top: 25%;
 }
+
+
+/* 
+.profil-img {
+	box-shadow: 18px 18px 5px #FFFBDC;
+	animation: upDown 3s linear infinite;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+} */
