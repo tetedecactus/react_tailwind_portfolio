@@ -1,0 +1,12 @@
+.icons-card {
+	top: 50%;
+}
+
+.vl {
+	border-left: 2px solid #FFFBDC;
+	height: 200px;
+	transform: translateX(50%);
+	opacity: 40%;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
