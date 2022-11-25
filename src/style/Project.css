@@ -5,9 +5,15 @@
 	margin-top: 250px;
 }
 
-.title {
+/* .title {
 	border-bottom: 4px solid #FFFBDC;
 	border-top: 4px solid #FFFBDC;
+} */
+
+
+button {
+	color: #FFFBDC;
+	border: 2px solid #FFFBDC;
 }
 
 .moving-title {

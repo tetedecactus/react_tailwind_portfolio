@@ -3,9 +3,9 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../assets/img/logo.svg'
 
 const navigation = [
-  { name: 'About', href: '#', current: true },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
+  { name: 'About', href: '#about', current: true },
+  { name: 'Projects', href: '/projects', current: false },
+  { name: 'Contact', href: '#contact', current: false },
   
 ]
 

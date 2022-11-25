@@ -23,13 +23,13 @@
 }
 
 
-/* 
+
 .profil-img {
-	box-shadow: 18px 18px 5px #FFFBDC;
+	box-shadow: 12px 12px 0px #FFFBDC;
 	animation: upDown 3s linear infinite;
 }
 
-@keyframes upDown {
+/* @keyframes upDown {
     0% {
         transform: translateY(-20px);
     }
