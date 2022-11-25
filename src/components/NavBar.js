@@ -20,7 +20,7 @@ function NavBar() {
         <Disclosure as="nav" className="bg-black">
           {({ open }) => (
             <>
-              <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
+              <div className="mx-auto max-w-8xl px-4">
                 <div className="flex h-20 items-center justify-between">
                   <div className="w-full flex items-center text-center sm:flex-row  sm:justify-between py-4 px-6 shadow sm:items-center w-full">
 					{/* Logo */}

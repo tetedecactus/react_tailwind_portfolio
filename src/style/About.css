@@ -5,9 +5,19 @@
 	height: 100% !important;
 }
 
+.about-card {
+	transition: 0.6s;
+}
+
+.about-card:hover  .description {
+	transition: 0.6s;
+	display: block;
+	text-align: justify;
+	width: 500px;
+	
+}
+
 .name {
-	position: absolute;
 	left: 44%;
 	top: 25%;
-	z-index: 1;
 }

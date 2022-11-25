@@ -6,11 +6,11 @@ import eastclaw from '../assets/img/eastclaw.PNG'
 function Project() {
 	return(
 		<div className="min-h-full bg-black project-card">
-			<div className="container m-auto px-6 md:px-12 xl:px-6">
+			<div className="container m-auto px-6 md:px-12 xl:px-6 justify-center">
 				<div className="title">
 					<h2 className="text-[#FFFBDC]">PROJECT</h2>
 				</div>
-				<div className='w-full flex items-center'>
+				<div className='w-full flex items-center justify-center'>
 					<div>
 						<img className="object-left" src={fdf} width="450" height="450" alt="fdf"/>
 					</div>
