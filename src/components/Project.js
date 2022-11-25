@@ -7,18 +7,19 @@ function Project() {
 	return(
 		<div className="min-h-full bg-black project-card">
 			<div className="container m-auto px-6 md:px-12 xl:px-6 justify-center">
-				<div className="title">
-					<h2 className="text-[#FFFBDC]">PROJECT</h2>
+				<div className='moving-title'>
+					<div className='title-mover'>
+						<h2 className="title text-[#FFFBDC]">PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT</h2>
+					</div>
 				</div>
-				<div className='w-full flex items-center justify-center'>
-					<div>
-						<img className="object-left" src={fdf} width="450" height="450" alt="fdf"/>
+				<div className="moving-banner">
+					<div className="mover">
+					
 					</div>
-					<div>
-						<img className="object-center" src={eastclaw} width="450" height="450" alt="eastclaw"/>
-					</div>
-					<div>
-						<img className="object-right" src={transcendence} width="450" height="450" alt="transcendence"/>
+				</div>
+				<div className='moving-title'>
+					<div className='title-mover'>
+						<h2 className="title text-[#FFFBDC]">PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT</h2>
 					</div>
 				</div>
 			</div>
