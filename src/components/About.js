@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import '../style/About.css'
+import '../style/About.scss'
 import olabrecq from '../assets/img/olabrecq.jpg'
 
 function About() {
@@ -40,22 +40,22 @@ function About() {
 	}
 
 	return (
-		<div className='min-h-full py-16 about-page'>
+		<div className='min-h-full py-16 px-10 about-page'>
 			<div className="container m-auto px-6 md:px-12 xl:px-6">
 				<div className='md:1/12 lg:1/12 mb:20'>
-					<p className='mt-5 sm:text-start md:text-center text-[#FFFBDC] text-xs'>I am</p>
+					<p className='mt-5 sm:text-start md:text-center text-[#6b7891] text-xs'>I am</p>
 				</div>
 				<div className='about-card'>
 					<div className="about-card space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
 						<div className="md:7/12 lg:w-8/12">
-							<h2 className="name z-10 text-2xl text-[#FFFBDC] font-bold md:text-4xl md:absolute lg:absolute">Olivier Labrecque <br/>Lacasse</h2>
+							<h2 className="name z-10 text-2xl text-[#071d88] font-bold md:text-4xl md:absolute lg:absolute">Olivier Labrecque <br/>Lacasse</h2>
 						</div>
 						<div className="md:1/12 lg:w-6/12 justify-center">
-							<img className='profil-img rounded-md opacity-60 sticky' src={olabrecq} alt="me" width="250" height="250"/>
+							<img className='profil-img rounded-md border-[#071d88] border-4 opacity-60 sticky' src={olabrecq} alt="me" width="250" height="250"/>
 						</div>
 					</div>
 					<div>
-						<h2 className="mt-20 mx-8 lg:ml-40 text-[#FFFBDC] sm:text-center flex-end font-bold text-xl">{`Programming Student  & `}<span className="wrap">{text}</span></h2>
+						<h2 className="mt-20 mx-8 lg:ml-40 text-[#6b7891] sm:text-center flex-end font-bold text-xl">{`Programming Student  & `}<span className="wrap">{text}</span></h2>
 						<div className='description hidden text-[#FFFBDC] text-center'>
 							<p>		Always having several projects on the go, I often wear several hats 
 									such as founder of my own digital company, developer, client coordinator, 

@@ -1,6 +1,6 @@
 import { ArrowRightCircle } from "react-bootstrap-icons"
-import '../style/Project.css'
-import fdf from '../assets/img/fdf.png'
+import '../style/Project.scss'
+import fdf from '../assets/img/fdf.PNG'
 import transcendence from '../assets/img/transcendence.PNG'
 import eastclaw from '../assets/img/eastclaw.PNG'
 
@@ -11,7 +11,7 @@ function ProjectBanner() {
 				<div className="title">
 					<h2 className="text-[#FFFBDC]">PROJECT</h2>
 				</div>
-				<div className='w-full flex items-center opacity-60'>
+				<div className='w-full flex items-center '>
 					<div>
 						<img className="object-left" src={fdf} width="750" alt="fdf"/>
 					</div>
@@ -22,24 +22,9 @@ function ProjectBanner() {
 						<img className="object-right" src={transcendence} width="750" alt="transcendence"/>
 					</div>
 					<div>
-						<button className="" onClick={() => console.log('connect')}>See more<ArrowRightCircle size={25} /></button>
+						<a href="/projects"><button className="text-[#071d88] hover:text-[#c3cdff] border-2 border-[#071d88] hover:border-[#c3cdff]" onClick={() => console.log('connect')}>See more<ArrowRightCircle size={25} /></button></a>
 					</div>
 				</div>
-				{/* <div className='moving-title'>
-					<div className='title-mover'>
-						<h2 className="title text-[#FFFBDC]">PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT</h2>
-					</div>
-				</div>
-				<div className="moving-banner">
-					<div className="mover">
-					
-					</div>
-				</div>
-				<div className='moving-title'>
-					<div className='title-mover'>
-						<h2 className="title text-[#FFFBDC]">PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT PROJECT</h2>
-					</div>
-				</div> */}
 			</div>
 		</div>
 	);

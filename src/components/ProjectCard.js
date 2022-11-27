@@ -5,7 +5,7 @@ function ProjectCard({title, imgUrl, description, language, lien}) {
 		<diV className="flex justify-center">
 			<div className='mb-72'>
 				<div>
-					<h2 className='text-[#FFFBDC] text-4xl'>{title}</h2>
+					<h2 className='text-[#6b7891] text-4xl'>{title}</h2>
 				</div>
 				<div className='flex'>
 
@@ -13,7 +13,7 @@ function ProjectCard({title, imgUrl, description, language, lien}) {
 						<img className='opacity-30 hover:opacity-100 bg-[#101010]' src={imgUrl} width={950}/>
 					</div>
 					<div className="w-96 rounded-md bg-[#101010] h-auto lg:absolute left-1/2 mt-12 ml-12 ">
-						<p className='text-[#FFFBDC] text-justify'>{description}</p>
+						<p className='text-[#071d88] text-justify'>{description}</p>
 					</div>
 				</div>
 				<div>

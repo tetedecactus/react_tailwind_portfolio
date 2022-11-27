@@ -31,13 +31,13 @@ function NavBar() {
                         alt="olablac logo"
                       />
                     </div>
-                    <div className="hidden justify-end  md:block">
-                      <div className="mx-auto  flex items-baseline space-x-4">
+                    <div className="hidden justify-end md:block">
+                      <div className="mx-auto flex items-baseline space-x-4">
                         {navigation.map((item) => (
-                          <a
+                            <a
                             key={item.name}
                             href={item.href}
-                            className={classNames('text-[#FFFBDC] hover:bg-[#FFFBDC] hover:text-[#101010]',
+                            className={classNames('text-[#071d88] hover:text-[#c3cdff]',
                               'px-3 py-2 rounded-md text-sm font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
@@ -50,7 +50,7 @@ function NavBar() {
                   </div>
                   <div className="-mr-2 flex md:hidden">
                     {/* Mobile menu button */}
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-[#101010] p-2 text-[#FFFBDC] hover:bg-[#FFFBDC] hover:text-[#101010] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#101010]">
+                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md border-[#071d88] bg-[#000] p-2 text-[#071d88] hover:bg-[#c3cdff] hover:border=[#c3cdff] hover:text-[#000] focus:outline-none focus:ring-2 focus:ring-[#6b7891] focus:ring-offset-2 focus:ring-offset-[#101010]">
                       <span className="sr-only">Open main menu</span>
                       {open ? (
                         <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -69,7 +69,7 @@ function NavBar() {
                       as="a"
                       href={item.href}
                       className={classNames(
-                        item.current ? 'bg-[#101010] text-[#FFFBDC]' : 'text-[#FFFBDC] hover:bg-[#FFFBDC] hover:text-[#101010]',
+                        item.current ? 'bg-[#101010] text-[#c3cdff]' : 'text-[#071d88] hover:bg-[#c3cdff] hover:text-[#000]',
                         'block px-3 py-2 rounded-md text-base font-medium'
                       )}
                       aria-current={item.current ? 'page' : undefined}
@@ -88,3 +88,7 @@ function NavBar() {
 }
 
 export default NavBar;
+
+
+//ajouter logo de hover et scale on hover 
+//mettre items menu block 
