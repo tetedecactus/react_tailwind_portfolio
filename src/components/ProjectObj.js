@@ -1,4 +1,3 @@
-import { FileDiffFill } from "react-bootstrap-icons";
 import fdf from '../assets/img/fdf.PNG'
 import cub3d from '../assets/img/cub3d.PNG'
 import transcendence from '../assets/img/transcendence.PNG'
