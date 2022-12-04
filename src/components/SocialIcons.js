@@ -9,21 +9,21 @@ function SocialIcons() {
 			<div className="container">
 				<div className='icons-card fixed z-10 px-8'>
 					<div className='mb-5'>
-						<div class="vl"></div>
+						<div class="line"></div>
 						<a href='mailto:o.labrecque.lacassse@gmail.com'>
-							<img className="hover:translate-x-1.5" src={mailicons} alt="mail icon" width={22} height={22}/>
+							<img className="icons hover:translate-x-1.5" src={mailicons} alt="mail icon" width={22} height={22}/>
 						</a>
 					</div>
 					<div className='mb-5'>
 						<a href='https:/www.github.com/tetedecactus'>
-							<img className="hover:translate-x-1.5" src={githubicons} alt="github icon" width={22} height={28}/>
+							<img className="icons hover:translate-x-1.5" src={githubicons} alt="github icon" width={22} height={28}/>
 						</a>
 					</div>
 					<div className='mb-5'>
 						<a href='https:/www.linkedin.com/in/olivier-labrecque-lacasse/'>
-							<img className="hover:translate-x-1.5" src={linkedinicons} alt="linkedIn icon" width={22} height={22}/>
+							<img className="icons hover:translate-x-1.5" src={linkedinicons} alt="linkedIn icon" width={22} height={22}/>
 						</a>
-						<div class="vl"></div>
+						<div class="line"></div>
 					</div>
 				</div>
 			</div>

@@ -40,7 +40,7 @@ function About() {
 	}
 
 	return (
-		<div className='min-h-full py-16 px-10 about-page'>
+		<div className='min-h-full py-8 px-10 about-page'>
 			<div className="container m-auto px-6 md:px-12 xl:px-6">
 				<div className='md:1/12 lg:1/12 mb:20'>
 					<p className='mt-5 sm:text-start md:text-center text-[#6b7891] text-xs'>I am</p>

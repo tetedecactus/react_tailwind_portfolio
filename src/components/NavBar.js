@@ -1,6 +1,7 @@
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../assets/img/logo.svg'
+import '../style/Navbar.scss'
 
 const navigation = [
   { name: 'About', href: '#about', current: true },
@@ -37,7 +38,7 @@ function NavBar() {
                             <a
                             key={item.name}
                             href={item.href}
-                            className={classNames('text-[#071d88] hover:text-[#c3cdff]',
+                            className={classNames('nav-link text-[#071d88] hover:text-[#c3cdff]',
                               'px-3 py-2 rounded-md text-sm font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
