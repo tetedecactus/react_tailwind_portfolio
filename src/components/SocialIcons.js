@@ -9,7 +9,7 @@ function SocialIcons() {
 			<div className="container">
 				<div className='icons-card fixed z-10 px-8'>
 					<div className='mb-5'>
-						<div class="line"></div>
+						<div className="line"></div>
 						<a href='mailto:o.labrecque.lacassse@gmail.com'>
 							<img className="icons hover:translate-x-1.5" src={mailicons} alt="mail icon" width={22} height={22}/>
 						</a>
@@ -23,7 +23,7 @@ function SocialIcons() {
 						<a href='https:/www.linkedin.com/in/olivier-labrecque-lacasse/'>
 							<img className="icons hover:translate-x-1.5" src={linkedinicons} alt="linkedIn icon" width={22} height={22}/>
 						</a>
-						<div class="line"></div>
+						<div className="line"></div>
 					</div>
 				</div>
 			</div>
