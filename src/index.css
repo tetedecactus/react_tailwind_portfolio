@@ -2,3 +2,12 @@
     font-family: "Spy";
     src: local("Spy"), url(./assets/fonts/Spy.ttf);
   }
+
+  /* 
+  palette
+    black:        #000
+    blue:         #071D88
+    light gray:   #C3CDFF
+    dark gray:    #6B7891
+    white:        #fff
+  */

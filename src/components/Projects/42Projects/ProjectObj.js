@@ -1,10 +1,10 @@
-import fdf from '../assets/img/fdf.PNG'
-import cub3d from '../assets/img/cub3d.PNG'
-import transcendence from '../assets/img/transcendence.PNG'
+import fdf from '../../../assets/img/fdf.PNG'
+import cub3d from '../../../assets/img/cub3d.PNG'
+import transcendence from '../../../assets/img/transcendence.PNG'
 
 const projects = [
 	{
-		title: "Fdf",
+		title: "Fdf File-De-Fer",
 
 		imgUrl: fdf,
 

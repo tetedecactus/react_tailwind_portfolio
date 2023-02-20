@@ -1,6 +1,6 @@
 import About from "./About";
 import NavBar from "./NavBar";
-import ProjectBanner from "./ProjectBanner";
+import ProjectBanner from "./Projects/Projects";
 import SocialIcons from "./SocialIcons";
 
 function Home() {

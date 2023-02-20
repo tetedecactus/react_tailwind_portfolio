@@ -5,7 +5,7 @@ import '../style/Navbar.scss'
 
 const navigation = [
   { name: 'About', href: '#about', current: true },
-  { name: 'Projects', href: '/projects', current: false },
+  { name: 'Projects', href: '#projects', current: false },
   { name: 'Contact', href: '#contact', current: false },
   
 ]

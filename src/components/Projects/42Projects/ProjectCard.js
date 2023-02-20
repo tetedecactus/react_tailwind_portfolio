@@ -1,4 +1,4 @@
-import githubicon from '../assets/img/github.svg'
+import githubicon from '../../../assets/img/github.svg'
 
 function ProjectCard({title, imgUrl, description, language, lien}) {
 	return (
