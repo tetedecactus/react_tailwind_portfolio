@@ -1,5 +1,4 @@
 .about-page {
-	background-color: #000;
 	margin-top: 100px;
 	position: relative;
 	height: 100% !important;
@@ -17,10 +16,22 @@
 	
 // } 
 
+.quote {
+	margin-bottom: 6%;
+	// -webkit-text-stroke-width: .4px;
+	// -webkit-text-stroke-color: #C72931;
+}
+
 .name {
 	left: 44%;
 	top: 25%;
 }
 
+.description {
+	
+	@media only screen and (max-width: 350px) {
+			display: none;
+	}
+}
 
 

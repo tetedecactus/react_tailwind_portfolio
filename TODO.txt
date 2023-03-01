@@ -1,0 +1,2 @@
+check le padding du text descriptif -> About X
+check la screen width pour hidden le text descriptif -> About X
