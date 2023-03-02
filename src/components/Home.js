@@ -1,4 +1,5 @@
 import About from "./About";
+import CvButton from "./CvButton";
 import NavBar from "./NavBar";
 import ProjectBanner from "./Projects/Projects";
 import SocialIcons from "./SocialIcons";
@@ -9,7 +10,8 @@ function Home() {
 			<NavBar />
 			<SocialIcons />
 			<About />
-			<ProjectBanner />
+			<CvButton />
+			{/* <ProjectBanner /> */}
 		</div>
 	); 
 }

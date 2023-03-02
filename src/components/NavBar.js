@@ -1,17 +1,16 @@
-import { Disclosure } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import logo from '../assets/img/logo_olala.svg'
-import '../style/Navbar.scss'
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import logo from "../assets/img/logo_olala.svg";
+import "../style/Navbar.scss";
 
 const navigation = [
-  { name: 'About', href: '#about', current: true },
-  { name: 'Projects', href: '#projects', current: false },
-  { name: 'Contact', href: '#contact', current: false },
-  
-]
+  { name: "About", href: "#about", current: true },
+  { name: "Projects", href: "#projects", current: false },
+  { name: "Contact", href: "#contact", current: false },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 function NavBar() {
@@ -30,7 +29,8 @@ function NavBar() {
                         <img
                           className="h-16 w-18"
                           src={logo}
-                          alt="olablac logo" />
+                          alt="olablac logo"
+                        />
                       </div>
                       <div className="hidden justify-end md:block">
                         <div className="mx-auto flex items-baseline space-x-4">
@@ -38,10 +38,11 @@ function NavBar() {
                             <a
                               key={item.name}
                               href={item.href}
-                              className={classNames('nav-link rounded-md hover:border-[#C72931] hover:border-2 hover:bg-[#303A40]	font-bold text-[#C72931] hover:text-[#fff] ',
-                                'px-3 py-2 rounded-md text-sm font-medium'
+                              className={classNames(
+                                "nav-link rounded-md hover:border-[#C72931] hover:border-2 hover:bg-[#303A40]	font-bold text-[#C72931] hover:text-[#fff] ",
+                                "px-3 py-2 rounded-md text-sm font-medium"
                               )}
-                              aria-current={item.current ? 'page' : undefined}
+                              aria-current={item.current ? "page" : undefined}
                             >
                               {item.name}
                             </a>
@@ -54,9 +55,15 @@ function NavBar() {
                       <Disclosure.Button className="inline-flex items-center justify-center rounded-md border-[#C72931] bg-[#303A40] p-2 text-[#C72931] hover:bg-[#283035] hover:border=[#283035] hover:text-[#fff] focus:outline-none focus:ring-2 focus:ring-[#C72931] ring-2 ring-[#C72931] focus:ring-offset-2 focus:ring-offset-[#354249]">
                         <span className="sr-only">Open main menu</span>
                         {open ? (
-                          <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                          <XMarkIcon
+                            className="block h-6 w-6"
+                            aria-hidden="true"
+                          />
                         ) : (
-                          <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                          <Bars3Icon
+                            className="block h-6 w-6"
+                            aria-hidden="true"
+                          />
                         )}
                       </Disclosure.Button>
                     </div>
@@ -70,10 +77,12 @@ function NavBar() {
                         as="a"
                         href={item.href}
                         className={classNames(
-                          item.current ? 'text-[#C72931] hover:bg-[#303A40] hover:text-[#fff] ' : 'text-[#C72931] hover:bg-[#303A40] hover:text-[#fff]',
-                          'block px-3 py-2 rounded-md text-base font-medium'
+                          item.current
+                            ? "text-[#C72931] hover:bg-[#303A40] hover:text-[#fff] "
+                            : "text-[#C72931] hover:bg-[#303A40] hover:text-[#fff]",
+                          "block px-3 py-2 rounded-md text-base font-medium"
                         )}
-                        aria-current={item.current ? 'page' : undefined}
+                        aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
                       </Disclosure.Button>
@@ -81,16 +90,15 @@ function NavBar() {
                   </div>
                 </Disclosure.Panel>
               </>
-            )
+            );
           }}
         </Disclosure>
       </div>
     </>
-  )
+  );
 }
 
 export default NavBar;
 
-
-//ajouter logo de hover et scale on hover 
-//mettre items menu block 
+//ajouter logo de hover et scale on hover
+//mettre items menu block

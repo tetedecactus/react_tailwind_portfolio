@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import '../style/About.scss'
+import '../style/LightDarkMode.scss'
 import olabrecq from '../assets/img/olabrecq.jpg'
 
 function About() {
@@ -43,7 +44,7 @@ function About() {
 		<div id="about" className="min-h-full py-8 px-10 about-page bg-[#303A40]">
 			<div className="container m-auto px-6 md:px-12 xl:px-6">
 				<div className='md:1/12 lg:1/12 mb:20'>
-					<p className='mt-5 sm:text-start md:text-center text-[#C72931] text-xs'>I am</p>
+					<p className='mt-5 sm:text-start md:text-center text-[#C72931] font-bold text-sm'>I am</p>
 				</div>
 				<div className='about-card'>
 					<div className="about-card space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">

@@ -1,0 +1,58 @@
+
+$dark-mode:(
+    --bg-color: #303A40,
+
+//  NAVBAR
+    --bg-navbar-color: #283035,
+    --navbar--border-bottom-color: #C72931,
+    --navbar-link-color: #C72931,
+    --navbar-link-color-hover: #fff,
+    --navbar-link-bg-color-hover: #303A40,
+    --navbar-link-border-color-hover: #C72931,
+
+//  ABOUT
+    --img-border-color: #303A40,
+    --name-text-color: #fff,
+    --text-color: #C72931,
+    --description-text-color: #fff,
+
+//  CV BUTTON
+    --bg-cv-button-color: #283035,
+    --cv-button-text-color: #fff,
+    --cv-button-border-color: #C72931,
+    --bg-cv-button-color-hover: #303A40,
+    --cv-button-text-color-hover: #C72931,
+
+// SOCIAL ICONS
+    --line-color: #283035,
+    --icons-color: #C72931,
+);
+
+$light-mode:(
+    --bg-color: #DEC79E,
+ 
+//  NAVBAR
+    --bg-navbar-color: #020001,
+    --navbar--border-bottom-color: #ADACAA,
+    --navbar-link-color: #ADACAA,
+    --navbar-link-color-hover: #fff,   
+    --navbar-link-bg-color-hover: #DEC79E,
+    --navbar-link-border-color-hover: #ADACAA,
+
+//  ABOUT
+    --img-border-color: #fff,
+    --name-text-color: #fff,
+    --text-color: #020001, 
+    --description-text-color: #fff,
+
+//  CV BUTTON
+    --bg-cv-button-color: #ADACAA,
+    --cv-button-text-color: #fff,
+    --cv-button-border-color: #020001,
+    --bg-cv-button-color-hover: #DEC79E,
+    --cv-button-text-color-hover: #020001,
+
+// SOCIAL ICONS
+    --line-color: #020001,
+    --icons-color: #fff,
+);
