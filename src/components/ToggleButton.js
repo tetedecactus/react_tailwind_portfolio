@@ -1,22 +1,25 @@
-
+import '../style/LightDarkMode.scss'
+import React, { useState } from 'react';
 
 function ToggleButton () {
 
-    const toggleButton = document.querySelector('.toggle-button');
-    
-    toggleButton.addEventListener('click', () => {
-      if ($color-scheme == $light-mode) {
-        $color-scheme: $dark-mode;
-      } else {
-        $color-scheme: $light-mode;
-      }
-    }); 
-    
+    const [mode, setMode] = useState('light'); // default mode is light
+
+    const handleToggle = () => {
+        setMode(mode === 'light' ? 'dark' : 'light');
+        document.body.classList.toggle('dark-mode');
+        document.body.classList.toggle('light-mode');
+    };
+
     return (
         <div className="container">
-            <button class="toggle-button">Toggle Dark Mode</button>
+        <div className="toggle-button" onClick={handleToggle}>
+            {mode === 'light' ? 'Dark mode' : 'Light mode'}
+        </div>
+        ...
         </div>
     );
 }
+    
 
 export default ToggleButton;

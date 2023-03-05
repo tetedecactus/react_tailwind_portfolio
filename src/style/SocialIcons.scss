@@ -1,3 +1,5 @@
+@import './LightDarkMode.scss';
+
 .icons-card {
 	top: 35%;
 }
@@ -8,7 +10,7 @@
 
 .line {
 	// border-left: 2px solid #071d88;
-	border-left: 2px solid #283035;
+	border-left: 2px solid map-get($mode-map, --line-color );
 	height: 130px;
 	transform: translateX(50%);
 	// opacity: 50%;

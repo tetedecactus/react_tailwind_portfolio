@@ -1,22 +1,31 @@
-
 $dark-mode:(
     --bg-color: #303A40,
 
 //  NAVBAR
     --bg-navbar-color: #283035,
-    --navbar--border-bottom-color: #C72931,
+    --navbar-border-bottom-color: #C72931,
     --navbar-link-color: #C72931,
     --navbar-link-color-hover: #fff,
     --navbar-link-bg-color-hover: #303A40,
     --navbar-link-border-color-hover: #C72931,
 
+    --navbar-mobile-bg-button: #303A40,
+    --navbar-mobile-button-color: #C72931,
+    --navbar-mobile-bg-button-hover: #283035,
+    --navbar-mobile-button-color-hover: #fff,
+    --navbar-mobile-border-color: #C72931,
+
+    --navbar-mobile-link-bg-color-hover: #303A40,
+    --navbar-mobile-link-color: #C72931,
+    --navbar-mobile-link-color-hover: #fff,
+
 //  ABOUT
-    --img-border-color: #303A40,
+    --img-border-color: #283035,
     --name-text-color: #fff,
     --text-color: #C72931,
     --description-text-color: #fff,
-
-//  CV BUTTON
+    
+    //  CV BUTTON
     --bg-cv-button-color: #283035,
     --cv-button-text-color: #fff,
     --cv-button-border-color: #C72931,
@@ -32,18 +41,29 @@ $light-mode:(
     --bg-color: #DEC79E,
  
 //  NAVBAR
-    --bg-navbar-color: #020001,
-    --navbar--border-bottom-color: #ADACAA,
-    --navbar-link-color: #ADACAA,
-    --navbar-link-color-hover: #fff,   
+    --bg-navbar-color: #ADACAA,
+    // --bg-navbar-color: #020001,
+    --navbar-border-bottom-color: #020001,
+    --navbar-link-color: #fff,
+    --navbar-link-color-hover: #020001,   
     --navbar-link-bg-color-hover: #DEC79E,
-    --navbar-link-border-color-hover: #ADACAA,
+    --navbar-link-border-color-hover: #020001,
+
+    --navbar-mobile-bg-button: #020001,
+    --navbar-mobile-button-color: #fff,
+    --navbar-mobile-bg-button-hover: #DEC79E,
+    --navbar-mobile-button-color-hover: #fff,
+    --navbar-mobile-border-color: #fff,
+
+    --navbar-mobile-link-bg-color-hover: #020001,
+    --navbar-mobile-link-color: #DEC79E,
+    --navbar-mobile-link-color-hover: #fff,
 
 //  ABOUT
-    --img-border-color: #fff,
-    --name-text-color: #fff,
-    --text-color: #020001, 
-    --description-text-color: #fff,
+--img-border-color: #fff,
+--name-text-color: #fff,
+--text-color: #020001, 
+--description-text-color: #fff,
 
 //  CV BUTTON
     --bg-cv-button-color: #ADACAA,
@@ -56,3 +76,29 @@ $light-mode:(
     --line-color: #020001,
     --icons-color: #fff,
 );
+
+// $mode-map: 'dark';
+
+body.dark-mode {
+    $mode-map: 'dark';
+  @each $property, $value in $dark-mode {
+    --#{$property}: #{$value};
+  }
+}
+
+body.light-mode {
+    $mode-map: 'light';
+  @each $property, $value in $light-mode {
+    --#{$property}: #{$value};
+  }
+}
+
+// $mode-map: 'dark';
+$mode-map: 'light';
+
+@if $mode-map == 'dark' {
+    $mode-map:  $dark-mode;
+} @else {
+    $mode-map: $light-mode;
+}
+

@@ -3,6 +3,7 @@ import CvButton from "./CvButton";
 import NavBar from "./NavBar";
 import ProjectBanner from "./Projects/Projects";
 import SocialIcons from "./SocialIcons";
+import ToggleButton from "./ToggleButton";
 
 function Home() {
 	return (
@@ -11,6 +12,7 @@ function Home() {
 			<SocialIcons />
 			<About />
 			<CvButton />
+			<ToggleButton />
 			{/* <ProjectBanner /> */}
 		</div>
 	); 

@@ -1,6 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from "../assets/img/logo_olala.svg";
+// import logo_d from "../assets/img/logo_dark.svg";
+import logo_l from "../assets/img/logo_light.svg";
 import "../style/Navbar.scss";
 
 const navigation = [
@@ -17,18 +18,18 @@ function NavBar() {
   return (
     <>
       <div className="min-h-full">
-        <Disclosure as="nav" className="bg-[#283035]">
+        <Disclosure as="nav" className="nav">
           {({ open }) => {
             return (
               <>
                 <div className="mx-auto max-w-8xl">
-                  <div className="flex h-20 border-b-[#C72931] px-4 border-b-2 items-center justify-between">
+                  <div className="nav-container flex h-20 px-4  items-center justify-between">
                     <div className="w-full flex items-center  text-center sm:flex-row  sm:justify-between py-4 px-6  sm:items-center w-full">
                       {/* Logo */}
                       <div className="flex-shrink-0">
                         <img
-                          className="h-16 w-18"
-                          src={logo}
+                          className="h-18 w-20"
+                          src={logo_l}
                           alt="olablac logo"
                         />
                       </div>
@@ -39,7 +40,7 @@ function NavBar() {
                               key={item.name}
                               href={item.href}
                               className={classNames(
-                                "nav-link rounded-md hover:border-[#C72931] hover:border-2 hover:bg-[#303A40]	font-bold text-[#C72931] hover:text-[#fff] ",
+                                "nav-link rounded-md font-bold",
                                 "px-3 py-2 rounded-md text-sm font-medium"
                               )}
                               aria-current={item.current ? "page" : undefined}
@@ -52,7 +53,7 @@ function NavBar() {
                     </div>
                     <div className="-mr-2 flex md:hidden">
                       {/* Mobile menu button */}
-                      <Disclosure.Button className="inline-flex items-center justify-center rounded-md border-[#C72931] bg-[#303A40] p-2 text-[#C72931] hover:bg-[#283035] hover:border=[#283035] hover:text-[#fff] focus:outline-none focus:ring-2 focus:ring-[#C72931] ring-2 ring-[#C72931] focus:ring-offset-2 focus:ring-offset-[#354249]">
+                      <Disclosure.Button className="nav-mobile-button inline-flex items-center justify-center rounded-md p-2 focus:outline-none ">
                         <span className="sr-only">Open main menu</span>
                         {open ? (
                           <XMarkIcon
@@ -70,18 +71,15 @@ function NavBar() {
                   </div>
                 </div>
                 <Disclosure.Panel className="md:hidden">
-                  <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+                  <div className=" space-y-1 px-2 pt-2 pb-3 sm:px-3">
                     {navigation.map((item) => (
                       <Disclosure.Button
                         key={item.name}
                         as="a"
                         href={item.href}
-                        className={classNames(
-                          item.current
-                            ? "text-[#C72931] hover:bg-[#303A40] hover:text-[#fff] "
-                            : "text-[#C72931] hover:bg-[#303A40] hover:text-[#fff]",
-                          "block px-3 py-2 rounded-md text-base font-medium"
-                        )}
+                        className={
+                          "nav-mobile-link block px-3 py-2 rounded-md text-base font-medium"
+                        }
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
