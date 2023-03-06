@@ -1,15 +1,11 @@
-import githubicons_d from "../assets/img/github_dark.svg";
-import mailicons_d from "../assets/img/mail_dark.svg";
-import linkedinicons_d from "../assets/img/linkedin_dark.svg";
-import githubicons_l from "../assets/img/github_light.svg";
-import mailicons_l from "../assets/img/mail_light.svg";
-import linkedinicons_l from "../assets/img/linkedin_light.svg";
+import images from "../module/Images";
 import style from "../style/SocialIcons.scss";
 import {  useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext.tsx";
 
+
 function SocialIcons() {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div>
@@ -20,9 +16,9 @@ function SocialIcons() {
             <a href="mailto:o.labrecque.lacassse@gmail.com">
               <img
                 className="icons hover:translate-x-1.5"
-                src={(theme === 'light' ? mailicons_l : mailicons_d)}
+                src={(theme === 'light' ? images.mailicons_l : theme === 'dark' ? images.mailicons_d : images.mailicons_csm)}
                 alt="mail icon"
-                width={22}
+                width={24}
                 height={22}
               />
             </a>
@@ -31,9 +27,9 @@ function SocialIcons() {
             <a href="https:/www.github.com/tetedecactus">
               <img
                 className="icons hover:translate-x-1.5"
-                src={(theme === 'light' ? githubicons_l : githubicons_d)}
+                src={(theme === 'light' ? images.githubicons_l : theme === 'dark' ? images.githubicons_d : images.githubicons_csm)}
                 alt="github icon"
-                width={22}
+                width={24}
                 height={28}
               />
             </a>
@@ -42,10 +38,10 @@ function SocialIcons() {
             <a href="https:/www.linkedin.com/in/olivier-labrecque-lacasse/">
               <img
                 className="icons hover:translate-x-1.5"
-                src={(theme === 'light' ? linkedinicons_l : linkedinicons_d)}
+                src={(theme === 'light' ? images.linkedinicons_l : theme === 'dark' ? images.linkedinicons_d : images.linkedinicons_csm)}
                 alt="linkedIn icon"
                 width={22}
-                height={22}
+                height={26}
               />
             </a>
             <div className="line"></div>

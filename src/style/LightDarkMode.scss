@@ -73,8 +73,44 @@ $light-mode: (
   --cv-button-text-color-hover: #020001,
 
   // SOCIAL ICONS
-  --line-color: #020001,
-  --icons-color: #fff,
+  --line-color: #adacaa,
 );
 
-// $mode-map: 'dark';
+$CSM-mode: (
+  --bg-color: #586BB8,
+
+  //  NAVBAR
+  --bg-navbar-color: #64BD49,
+  --navbar-border-bottom-color: #FFFF0B,
+  --navbar-link-color: #FFFF0B,
+  --navbar-link-color-hover: #64BD49,
+  --navbar-link-bg-color-hover: #586BB8,
+  --navbar-link-border-color-hover: #FFFF0B,
+
+  --navbar-mobile-bg-button: #586BB8,
+  --navbar-mobile-button-color: #FE5455,
+  --navbar-mobile-bg-button-hover: #64BD49,
+  --navbar-mobile-button-color-hover: #586BB8,
+  --navbar-mobile-border-color: #FE5455,
+
+  --navbar-mobile-link-bg-color-hover: #64BD49,
+  --navbar-mobile-link-color: #FFFF0B,
+  --navbar-mobile-link-color-hover: #586BB8,
+
+  //  ABOUT
+  --img-border-color: #64BD49,
+  --name-text-color: #64BD49,
+  --text-color: #FE5455,
+  --description-text-color: #FFFF0B,
+
+  //  CV BUTTON
+  --bg-cv-button-color: #64BD49,
+  --cv-button-text-color: #586BB8,
+  --cv-button-border-color: #FFFF0B,
+  --bg-cv-button-color-hover: #586BB8,
+  --cv-button-text-color-hover: #64BD49,
+
+  // SOCIAL ICONS
+  --line-color: #64BD49,
+);
+

@@ -4,7 +4,12 @@ function ToggleButton () {
     
     return (
         <div class="theme-container shadow-dark">
-            <img id="theme-icon"    src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg" alt="ERR"></img>
+            <button type="button" class="theme-button light-button" alt="Light Mode">
+            </button>
+            <button type="button" class="theme-button dark-button" alt="Dark Mode">
+            </button>
+            <button type="button" class="theme-button CSM-button" alt="ChainSawMan Mode">
+            </button>
         </div>
     );
 }

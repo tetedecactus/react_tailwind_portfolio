@@ -66,6 +66,40 @@
   }
 }
 
+.CSM {
+  .about-page {
+    margin-top: 100px;
+    position: relative;
+    height: 100% !important;
+    background-color: map-get($CSM-mode, --bg-color);
+  }
+
+  .iam {
+    color: map-get($CSM-mode, --text-color);
+  }
+
+  .name {
+    color: map-get($CSM-mode, --name-text-color);
+  }
+
+  .quote {
+    color: map-get($CSM-mode, --text-color);
+  }
+
+  .description {
+    color: map-get($CSM-mode, --description-text-color);
+  }
+
+  .profil-img {
+    border: 4px solid map-get($CSM-mode, --img-border-color);
+  }
+
+  .about-card {
+    transition: 0.6s;
+  }
+}
+
+
 // .about-card:hover  .description {
 // 	transition: 0.6s;
 // 	display: block;

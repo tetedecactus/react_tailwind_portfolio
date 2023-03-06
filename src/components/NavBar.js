@@ -1,10 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo_d from "../assets/img/logo_dark.svg";
-import logo_l from "../assets/img/logo_light.svg";
+import images from "../module/Images"
 import style from "../style/Navbar.scss";
-import "../style/Navbar.scss";
-// import "../style/LightDarkMode.scss"
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext.tsx";
 
@@ -34,7 +31,7 @@ function NavBar() {
                       <div className="flex-shrink-0">
                         <img
                           className="h-18 w-20"
-                          src={(theme === 'light' ? logo_l : logo_d)}
+                          src={(theme === 'light' ? images.logo_l : theme === 'dark' ? images.logo_d : images.logo_csm)}
                           alt="olablac logo"
                         />
                       </div>
@@ -58,7 +55,7 @@ function NavBar() {
                     </div>
                     <div className="-mr-2 flex md:hidden">
                       {/* Mobile menu button */}
-                      <Disclosure.Button className="style.nav-mobile-button inline-flex items-center justify-center rounded-md p-2 focus:outline-none ">
+                      <Disclosure.Button className="nav-mobile-button inline-flex items-center justify-center rounded-md p-2 focus:outline-none ">
                         <span className="sr-only">Open main menu</span>
                         {open ? (
                           <XMarkIcon

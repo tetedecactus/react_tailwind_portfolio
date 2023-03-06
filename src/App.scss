@@ -16,3 +16,7 @@ body {
 .dark {
 	background-color: map-get($dark-mode, --bg-color);
 }
+
+.CSM {
+	background-color: map-get($CSM-mode, --bg-color);
+}
