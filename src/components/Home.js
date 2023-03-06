@@ -3,11 +3,11 @@ import CvButton from "./CvButton";
 import NavBar from "./NavBar";
 // import ProjectBanner from "./Projects/Projects";
 import SocialIcons from "./SocialIcons";
-// import ToggleButton from "./ToggleButton";
 import "../../src/App.scss";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext.tsx";
 import ToggleButton from "./ToggleButton";
+import ContactForm from "./ContactForm";
 
 function Home() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -20,6 +20,7 @@ function Home() {
       <About />
       <CvButton />
       {/* <ProjectBanner /> */}
+      <ContactForm />
       <button onClick={() => setTheme(theme === 'light' ? 'dark' : theme === 'dark' ? 'CSM' : 'light')}>
         <ToggleButton />
       </button>

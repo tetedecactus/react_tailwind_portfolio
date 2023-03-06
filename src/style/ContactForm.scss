@@ -1,0 +1,88 @@
+@import './LightDarkMode.scss';
+
+.light {
+    .contact-container {
+        border-top: 3px solid map-get($light-mode, --contact-container-border-color);
+        border-bottom: 3px solid map-get($light-mode, --contact-container-border-color);
+        background-color: map-get($light-mode, --bg-contact-color);
+    }
+
+    .title {
+        color: map-get($light-mode, --contact-text-color);
+    }
+
+    p {
+        color: map-get($light-mode, --paragraph-contact-color);
+    }
+    label {
+        color: map-get($light-mode, --contact-label-color);
+    }
+    input {
+        border: 3px solid map-get($light-mode, --contact-input-border-color);
+        color: map-get($light-mode, --contact-input-text-color);
+        background-color: map-get($light-mode, --contact-input-bg-color);
+    }
+    textarea {
+        border: 3px solid map-get($light-mode, --contact-input-border-color);
+        color: map-get($light-mode, --contact-input-text-color);
+        background-color: map-get($light-mode, --contact-input-bg-color);
+    }
+}
+
+.dark {
+    .contact-container {
+        border-top: 3px solid map-get($dark-mode, --contact-container-border-color);
+        border-bottom: 3px solid map-get($dark-mode, --contact-container-border-color);
+        background-color: map-get($dark-mode, --bg-contact-color);
+    }
+
+    .title {
+        color: map-get($dark-mode, --contact-text-color);
+    }
+
+    p {
+        color: map-get($dark-mode, --paragraph-contact-color);
+    }
+    label {
+        color: map-get($dark-mode, --contact-label-color);
+    }
+    input {
+        border: 3px solid map-get($dark-mode, --contact-input-border-color);
+        color: map-get($dark-mode, --contact-input-text-color);
+        background-color: map-get($dark-mode, --contact-input-bg-color);
+    }
+    textarea {
+        border: 3px solid map-get($dark-mode, --contact-input-border-color);
+        color: map-get($dark-mode, --contact-input-text-color);
+        background-color: map-get($dark-mode, --contact-input-bg-color);
+    }
+}
+
+.CSM {
+    .contact-container {
+        border-top: 3px solid map-get($CSM-mode, --contact-container-border-color);
+        border-bottom: 3px solid map-get($CSM-mode, --contact-container-border-color);
+        background-color: map-get($CSM-mode, --bg-contact-color);
+    }
+
+    .title {
+        color: map-get($CSM-mode, --contact-text-color);
+    }
+
+    p {
+        color: map-get($CSM-mode, --paragraph-contact-color);
+    }
+    label {
+        color: map-get($CSM-mode, --contact-label-color);
+    }
+    input {
+        border: 3px solid map-get($CSM-mode, --contact-input-border-color);
+        color: map-get($CSM-mode, --contact-input-text-color);
+        background-color: map-get($CSM-mode, --contact-input-bg-color);
+    }
+    textarea {
+        border: 3px solid map-get($CSM-mode, --contact-input-border-color);
+        color: map-get($CSM-mode, --contact-input-text-color);
+        background-color: map-get($CSM-mode, --contact-input-bg-color);
+    }
+}
