@@ -3,18 +3,16 @@
 @tailwind utilities;
 @import './style/LightDarkMode.scss';
 
-// :root {
-
-// }
 
 body {
-  height: 100%;
-  width: 100%;
-  /* background-color: #FFFBDC; */
-  background-color: map-get($mode-map, --bg-color);
-  /* background-image: url(./assets/img/salon.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
+	height: 100%;
+	width: 100%;
+}
+
+.light {
+	  background-color: map-get($light-mode, --bg-color);
+}
+
+.dark {
+	background-color: map-get($dark-mode, --bg-color);
 }

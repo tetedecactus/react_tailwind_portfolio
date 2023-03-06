@@ -1,22 +1,10 @@
-import '../style/LightDarkMode.scss'
-import React, { useState } from 'react';
+import '../style/ToggleButton.scss'
 
 function ToggleButton () {
-
-    const [mode, setMode] = useState('light'); // default mode is light
-
-    const handleToggle = () => {
-        setMode(mode === 'light' ? 'dark' : 'light');
-        document.body.classList.toggle('dark-mode');
-        document.body.classList.toggle('light-mode');
-    };
-
+    
     return (
-        <div className="container">
-        <div className="toggle-button" onClick={handleToggle}>
-            {mode === 'light' ? 'Dark mode' : 'Light mode'}
-        </div>
-        ...
+        <div class="theme-container shadow-dark">
+            <img id="theme-icon"    src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg" alt="ERR"></img>
         </div>
     );
 }

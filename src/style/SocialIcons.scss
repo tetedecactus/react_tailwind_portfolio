@@ -10,10 +10,23 @@
 
 .line {
 	// border-left: 2px solid #071d88;
-	border-left: 2px solid map-get($mode-map, --line-color );
 	height: 130px;
 	transform: translateX(50%);
 	// opacity: 50%;
 	margin-top: 16px;
 	margin-bottom: 16px;
+}
+
+.light {
+	.line {
+		border-left: 2px solid map-get($light-mode, --line-color );
+
+	}
+}
+
+.dark {
+	.line {
+		border-left: 2px solid map-get($dark-mode, --line-color );
+
+	}
 }

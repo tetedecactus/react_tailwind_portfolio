@@ -1,45 +1,87 @@
-@import './LightDarkMode.scss';
+@import "./LightDarkMode.scss";
 
+.light {
+  .nav {
+    background-color: map-get($light-mode, --bg-navbar-color);
+  }
 
-.nav {
-    background-color: map-get($mode-map, --bg-navbar-color);
-}
+  .nav-container {
+    border-bottom: 3px solid map-get($light-mode, --navbar-border-bottom-color);
+  }
 
-.nav-container {
-    border-bottom: 3px solid map-get($mode-map, --navbar-border-bottom-color);
-}
-
-.nav-link {
+  .nav-link {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
 
-    color: map-get($mode-map, --navbar-link-color);
-    
-    
+    color: map-get($light-mode, --navbar-link-color);
+  }
+
+  .nav-link:hover {
+    color: map-get($light-mode, --navbar-link-color-hover);
+    background-color: map-get($light-mode, --navbar-link-bg-color-hover);
+    border: 2px solid map-get($light-mode, --navbar-link-border-color-hover);
+  }
+
+  .nav-mobile-button {
+    color: map-get($light-mode, --navbar-mobile-button-color);
+    background-color: map-get($light-mode, --navbar-mobile-bg-button);
+    border: 2px solid map-get($light-mode, --navbar-mobile-border-color);
+  }
+  .nav-mobile-button:hover {
+    color: map-get($light-mode, --navbar-mobile-button-color-hover);
+    background-color: map-get($light-mode, --navbar-mobile-bg-button-hover);
+  }
+
+  .nav-mobile-link {
+    color: map-get($light-mode, --navbar-mobile-link-color);
+  }
+
+  .nav-mobile-link:hover {
+    color: map-get($light-mode, --navbar-mobile-link-color-hover);
+    background-color: map-get($light-mode, --navbar-mobile-link-bg-color-hover);
+  }
 }
 
-.nav-link:hover {
-    color: map-get($mode-map, --navbar-link-color-hover);
-    background-color: map-get($mode-map, --navbar-link-bg-color-hover);
-    border: 2px solid map-get($mode-map, --navbar-link-border-color-hover);
-}
+.dark {
+  .nav {
+    background-color: map-get($dark-mode, --bg-navbar-color);
+  }
 
-.nav-mobile-button {
-    color: map-get($mode-map, --navbar-mobile-button-color);
-    background-color: map-get($mode-map, --navbar-mobile-bg-button);
-    border: 2px solid map-get($mode-map, --navbar-mobile-border-color);
-}
-.nav-mobile-button:hover {
-    color: map-get($mode-map, --navbar-mobile-button-color-hover);
-    background-color: map-get($mode-map, --navbar-mobile-bg-button-hover);
-}
+  .nav-container {
+    border-bottom: 3px solid map-get($dark-mode, --navbar-border-bottom-color);
+  }
 
-.nav-mobile-link {
-    color: map-get($mode-map, --navbar-mobile-link-color);
-}
+  .nav-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
 
-.nav-mobile-link:hover {
-    color: map-get($mode-map, --navbar-mobile-link-color-hover);
-    background-color: map-get($mode-map, --navbar-mobile-link-bg-color-hover);
+    color: map-get($dark-mode, --navbar-link-color);
+  }
+
+  .nav-link:hover {
+    color: map-get($dark-mode, --navbar-link-color-hover);
+    background-color: map-get($dark-mode, --navbar-link-bg-color-hover);
+    border: 2px solid map-get($dark-mode, --navbar-link-border-color-hover);
+  }
+
+  .nav-mobile-button {
+    color: map-get($dark-mode, --navbar-mobile-button-color);
+    background-color: map-get($dark-mode, --navbar-mobile-bg-button);
+    border: 2px solid map-get($dark-mode, --navbar-mobile-border-color);
+  }
+  .nav-mobile-button:hover {
+    color: map-get($dark-mode, --navbar-mobile-button-color-hover);
+    background-color: map-get($dark-mode, --navbar-mobile-bg-button-hover);
+  }
+
+  .nav-mobile-link {
+    color: map-get($dark-mode, --navbar-mobile-link-color);
+  }
+
+  .nav-mobile-link:hover {
+    color: map-get($dark-mode, --navbar-mobile-link-color-hover);
+    background-color: map-get($dark-mode, --navbar-mobile-link-bg-color-hover);
+  }
 }

@@ -1,104 +1,80 @@
-$dark-mode:(
-    --bg-color: #303A40,
+$dark-mode: (
+  --bg-color: #303a40,
 
-//  NAVBAR
-    --bg-navbar-color: #283035,
-    --navbar-border-bottom-color: #C72931,
-    --navbar-link-color: #C72931,
-    --navbar-link-color-hover: #fff,
-    --navbar-link-bg-color-hover: #303A40,
-    --navbar-link-border-color-hover: #C72931,
+  //  NAVBAR
+  --bg-navbar-color: #283035,
+  --navbar-border-bottom-color: #c72931,
+  --navbar-link-color: #c72931,
+  --navbar-link-color-hover: #fff,
+  --navbar-link-bg-color-hover: #303a40,
+  --navbar-link-border-color-hover: #c72931,
 
-    --navbar-mobile-bg-button: #303A40,
-    --navbar-mobile-button-color: #C72931,
-    --navbar-mobile-bg-button-hover: #283035,
-    --navbar-mobile-button-color-hover: #fff,
-    --navbar-mobile-border-color: #C72931,
+  --navbar-mobile-bg-button: #303a40,
+  --navbar-mobile-button-color: #c72931,
+  --navbar-mobile-bg-button-hover: #283035,
+  --navbar-mobile-button-color-hover: #fff,
+  --navbar-mobile-border-color: #c72931,
 
-    --navbar-mobile-link-bg-color-hover: #303A40,
-    --navbar-mobile-link-color: #C72931,
-    --navbar-mobile-link-color-hover: #fff,
+  --navbar-mobile-link-bg-color-hover: #303a40,
+  --navbar-mobile-link-color: #c72931,
+  --navbar-mobile-link-color-hover: #fff,
 
-//  ABOUT
-    --img-border-color: #283035,
-    --name-text-color: #fff,
-    --text-color: #C72931,
-    --description-text-color: #fff,
-    
-    //  CV BUTTON
-    --bg-cv-button-color: #283035,
-    --cv-button-text-color: #fff,
-    --cv-button-border-color: #C72931,
-    --bg-cv-button-color-hover: #303A40,
-    --cv-button-text-color-hover: #C72931,
+  //  ABOUT
+  --img-border-color: #283035,
+  --name-text-color: #fff,
+  --text-color: #c72931,
+  --description-text-color: #fff,
 
-// SOCIAL ICONS
-    --line-color: #283035,
-    --icons-color: #C72931,
+  //  CV BUTTON
+  --bg-cv-button-color: #283035,
+  --cv-button-text-color: #fff,
+  --cv-button-border-color: #c72931,
+  --bg-cv-button-color-hover: #303a40,
+  --cv-button-text-color-hover: #c72931,
+
+  // SOCIAL ICONS
+  --line-color: #283035,
+  --icons-color: #c72931,
 );
 
-$light-mode:(
-    --bg-color: #DEC79E,
- 
-//  NAVBAR
-    --bg-navbar-color: #ADACAA,
-    // --bg-navbar-color: #020001,
-    --navbar-border-bottom-color: #020001,
-    --navbar-link-color: #fff,
-    --navbar-link-color-hover: #020001,   
-    --navbar-link-bg-color-hover: #DEC79E,
-    --navbar-link-border-color-hover: #020001,
+$light-mode: (
+  --bg-color: #dec79e,
 
-    --navbar-mobile-bg-button: #020001,
-    --navbar-mobile-button-color: #fff,
-    --navbar-mobile-bg-button-hover: #DEC79E,
-    --navbar-mobile-button-color-hover: #fff,
-    --navbar-mobile-border-color: #fff,
+  //  NAVBAR
+  --bg-navbar-color: #adacaa,
+  // --bg-navbar-color: #020001,
+  --navbar-border-bottom-color: #020001,
+  --navbar-link-color: #fff,
+  --navbar-link-color-hover: #020001,
+  --navbar-link-bg-color-hover: #dec79e,
+  --navbar-link-border-color-hover: #020001,
 
-    --navbar-mobile-link-bg-color-hover: #020001,
-    --navbar-mobile-link-color: #DEC79E,
-    --navbar-mobile-link-color-hover: #fff,
+  --navbar-mobile-bg-button: #020001,
+  --navbar-mobile-button-color: #fff,
+  --navbar-mobile-bg-button-hover: #dec79e,
+  --navbar-mobile-button-color-hover: #fff,
+  --navbar-mobile-border-color: #fff,
 
-//  ABOUT
---img-border-color: #fff,
---name-text-color: #fff,
---text-color: #020001, 
---description-text-color: #fff,
+  --navbar-mobile-link-bg-color-hover: #020001,
+  --navbar-mobile-link-color: #dec79e,
+  --navbar-mobile-link-color-hover: #fff,
 
-//  CV BUTTON
-    --bg-cv-button-color: #ADACAA,
-    --cv-button-text-color: #fff,
-    --cv-button-border-color: #020001,
-    --bg-cv-button-color-hover: #DEC79E,
-    --cv-button-text-color-hover: #020001,
+  //  ABOUT
+  --img-border-color: #fff,
+  --name-text-color: #fff,
+  --text-color: #020001,
+  --description-text-color: #fff,
 
-// SOCIAL ICONS
-    --line-color: #020001,
-    --icons-color: #fff,
+  //  CV BUTTON
+  --bg-cv-button-color: #adacaa,
+  --cv-button-text-color: #fff,
+  --cv-button-border-color: #020001,
+  --bg-cv-button-color-hover: #dec79e,
+  --cv-button-text-color-hover: #020001,
+
+  // SOCIAL ICONS
+  --line-color: #020001,
+  --icons-color: #fff,
 );
 
 // $mode-map: 'dark';
-
-body.dark-mode {
-    $mode-map: 'dark';
-  @each $property, $value in $dark-mode {
-    --#{$property}: #{$value};
-  }
-}
-
-body.light-mode {
-    $mode-map: 'light';
-  @each $property, $value in $light-mode {
-    --#{$property}: #{$value};
-  }
-}
-
-// $mode-map: 'dark';
-$mode-map: 'light';
-
-@if $mode-map == 'dark' {
-    $mode-map:  $dark-mode;
-} @else {
-    $mode-map: $light-mode;
-}
-

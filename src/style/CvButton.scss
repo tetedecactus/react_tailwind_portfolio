@@ -1,15 +1,32 @@
 @import './LightDarkMode.scss';
 
-.cv-button {
-    bottom: 7%;
-    right: 2%;
+.light {
+    .cv-button {
+        bottom: 7%;
+        right: 2%;
+        
+        border: 4px solid map-get($light-mode, --cv-button-border-color);
+        color: map-get($light-mode, --cv-button-text-color);
+        background-color: map-get($light-mode, --bg-cv-button-color);
+    }
     
-    border: 4px solid map-get($mode-map, --cv-button-border-color);
-    color: map-get($mode-map, --cv-button-text-color);
-    background-color: map-get($mode-map, --bg-cv-button-color);
+    .cv-button:hover {
+        color: map-get($light-mode, --cv-button-text-color-hover);
+        background-color: map-get($light-mode, --bg-cv-button-color-hover);
+    }
 }
-
-.cv-button:hover {
-    color: map-get($mode-map, --cv-button-text-color-hover);
-    background-color: map-get($mode-map, --bg-cv-button-color-hover);
+.dark {
+    .cv-button {
+        bottom: 7%;
+        right: 2%;
+        
+        border: 4px solid map-get($dark-mode, --cv-button-border-color);
+        color: map-get($dark-mode, --cv-button-text-color);
+        background-color: map-get($dark-mode, --bg-cv-button-color);
+    }
+    
+    .cv-button:hover {
+        color: map-get($dark-mode, --cv-button-text-color-hover);
+        background-color: map-get($dark-mode, --bg-cv-button-color-hover);
+    }
 }

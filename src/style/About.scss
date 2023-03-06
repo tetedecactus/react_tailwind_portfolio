@@ -1,33 +1,69 @@
-@import './LightDarkMode.scss';
+@import "./LightDarkMode.scss";
 
-.about-page {
-	margin-top: 100px;
-	position: relative;
-	height: 100% !important;
-	background-color: map-get($mode-map, --bg-color);
+.light {
+  .about-page {
+    margin-top: 100px;
+    position: relative;
+    height: 100% !important;
+    background-color: map-get($light-mode, --bg-color);
+  }
+
+  .iam {
+    color: map-get($light-mode, --text-color);
+  }
+
+  .name {
+    color: map-get($light-mode, --name-text-color);
+  }
+
+  .quote {
+    color: map-get($light-mode, --text-color);
+  }
+
+  .description {
+    color: map-get($light-mode, --description-text-color);
+  }
+
+  .profil-img {
+    border: 4px solid map-get($light-mode, --img-border-color);
+  }
+
+  .about-card {
+    transition: 0.6s;
+  }
 }
 
-.iam {
-	color: map-get($mode-map, --text-color);
-}
+.dark {
+  .about-page {
+    margin-top: 100px;
+    position: relative;
+    height: 100% !important;
+    background-color: map-get($dark-mode, --bg-color);
+  }
 
-.name {
-	color: map-get($mode-map, --name-text-color);
-}
+  .iam {
+    color: map-get($dark-mode, --text-color);
+  }
 
-.quote {
-	color: map-get($mode-map, --text-color);
-}
+  .name {
+    color: map-get($dark-mode, --name-text-color);
+  }
 
-.description {
-	color: map-get($mode-map, --description-text-color);
-}
+  .quote {
+    color: map-get($dark-mode, --text-color);
+  }
 
-.profil-img {
-	border: 4px solid map-get($mode-map, --img-border-color);
-}
-.about-card {
-	transition: 0.6s;
+  .description {
+    color: map-get($dark-mode, --description-text-color);
+  }
+
+  .profil-img {
+    border: 4px solid map-get($dark-mode, --img-border-color);
+  }
+
+  .about-card {
+    transition: 0.6s;
+  }
 }
 
 // .about-card:hover  .description {
@@ -35,25 +71,22 @@
 // 	display: block;
 // 	text-align: justify;
 // 	width: 500px;
-	
-// } 
+
+// }
 
 .quote {
-	margin-bottom: 6%;
-	// -webkit-text-stroke-width: .4px;
-	// -webkit-text-stroke-color: #C72931;
+  margin-bottom: 6%;
+  // -webkit-text-stroke-width: .4px;
+  // -webkit-text-stroke-color: #C72931;
 }
 
 .name {
-	left: 44%;
-	top: 25%;
+  left: 44%;
+  top: 25%;
 }
 
 .description {
-	
-	@media only screen and (max-width: 350px) {
-			display: none;
-	}
+  @media only screen and (max-width: 350px) {
+    display: none;
+  }
 }
-
-

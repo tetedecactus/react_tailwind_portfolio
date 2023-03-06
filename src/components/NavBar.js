@@ -1,8 +1,12 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-// import logo_d from "../assets/img/logo_dark.svg";
+import logo_d from "../assets/img/logo_dark.svg";
 import logo_l from "../assets/img/logo_light.svg";
+import style from "../style/Navbar.scss";
 import "../style/Navbar.scss";
+// import "../style/LightDarkMode.scss"
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext.tsx";
 
 const navigation = [
   { name: "About", href: "#about", current: true },
@@ -15,21 +19,22 @@ function classNames(...classes) {
 }
 
 function NavBar() {
+  const { theme } = useContext(ThemeContext);
   return (
     <>
       <div className="min-h-full">
-        <Disclosure as="nav" className="nav">
+        <Disclosure as="nav" className={`${style.nav} ${style[theme]}`}>
           {({ open }) => {
             return (
               <>
-                <div className="mx-auto max-w-8xl">
+                <div className="nav mx-auto max-w-8xl">
                   <div className="nav-container flex h-20 px-4  items-center justify-between">
                     <div className="w-full flex items-center  text-center sm:flex-row  sm:justify-between py-4 px-6  sm:items-center w-full">
                       {/* Logo */}
                       <div className="flex-shrink-0">
                         <img
                           className="h-18 w-20"
-                          src={logo_l}
+                          src={(theme === 'light' ? logo_l : logo_d)}
                           alt="olablac logo"
                         />
                       </div>
@@ -53,7 +58,7 @@ function NavBar() {
                     </div>
                     <div className="-mr-2 flex md:hidden">
                       {/* Mobile menu button */}
-                      <Disclosure.Button className="nav-mobile-button inline-flex items-center justify-center rounded-md p-2 focus:outline-none ">
+                      <Disclosure.Button className="style.nav-mobile-button inline-flex items-center justify-center rounded-md p-2 focus:outline-none ">
                         <span className="sr-only">Open main menu</span>
                         {open ? (
                           <XMarkIcon
