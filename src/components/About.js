@@ -49,7 +49,7 @@ function About() {
     <section className={`${style.container} ${style[theme]}`}>
       <div
         id="about"
-        className="about-page container justify-center mb-20 py-8 min-h-full m-auto px-10 md:px-12 xl:px-6"
+        className="about-page container justify-center relative mb-20 py-8 min-h-full m-auto px-10 md:px-12 xl:px-6"
       >
         <div className="flex flex-row flex-wrap sm:flex-wrap justify-center sm:ml-12 lg:ml-20 relative">
 		<img className="img-component-5 absolute" src={images.bg_component_CSM_polygon}></img>
@@ -69,7 +69,7 @@ function About() {
               {`Hi I'm a Programming Student  / `}
               <span className="wrap">{text}</span>
             </h2>
-            <p className="intro text-justify text-xl">
+            <p className="intro text-justify text-xl z-10">
               {" "}
               Hello and welcome! My name is Olivier Labrecque-Lacasse, and I am
               a front-end web development intern. I am excited to be part of
@@ -85,7 +85,7 @@ function About() {
               and I look forward to working with you.
             </p>
             <div>
-              <button className="connect-button border font-bold rounded-md px-4 py-4 mt-6 mr-6">
+              <button className="connect-button relative border z-10 font-bold rounded-md px-4 py-4 mt-6 mr-6">
                 Let's Connect
               </button>
               <a
@@ -99,7 +99,7 @@ function About() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="connect-button border font-bold rounded-md px-4 py-4 mt-6">
+                <button className="connect-button relative z-1 border font-bold rounded-md px-4 py-4 mt-6">
                   DOWNLOAD C.V
                 </button>
               </a>
