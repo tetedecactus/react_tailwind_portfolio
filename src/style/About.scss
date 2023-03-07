@@ -122,7 +122,7 @@
   }
 
   .profil-img {
-    box-shadow: 18px 18px 5px map-get($CSM-mode, --img-border-color);
+    // box-shadow: 18px 18px 5px map-get($CSM-mode, --img-border-color);
     border: 4px solid map-get($CSM-mode, --img-border-color);
   }
 
@@ -184,7 +184,7 @@
 }
 
 .profil-img {
-  box-shadow: 18px 18px 5px #7f5af2;
+//   box-shadow: 18px 18px 5px #7f5af2;
   animation: upDown 3s linear infinite;
 }
 
@@ -198,4 +198,53 @@
   100% {
     transform: translateY(-20px);
   }
+}
+
+@keyframes downUp {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+
+.img-component-1 {
+	animation: upDown 3s linear infinite;
+	top: 7%;
+	right: 2%;
+}
+
+.img-component-2 {
+	animation: downUp 3s linear infinite;
+	bottom: 2%;
+	left: 90%;
+}
+
+.img-component-3 {
+	animation: downUp 3s linear infinite;
+	bottom: 2%;
+	left: 8%;
+}
+
+.img-component-4 {
+	animation: upDown 3s linear infinite;
+	bottom: 32%;
+	left: 60%;
+}
+
+.img-component-5 {
+	animation: upDown 3s linear infinite;
+	top: 12%;
+	right: 60%;
+}
+
+.img-component-6 {
+	animation: upDown 3s linear infinite;
+	top: 42%;
+	right: 42%;
 }

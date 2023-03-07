@@ -51,11 +51,15 @@ function About() {
         id="about"
         className="about-page container justify-center mb-20 py-8 min-h-full m-auto px-10 md:px-12 xl:px-6"
       >
-        <div className="flex flex-row flex-wrap sm:flex-wrap justify-center sm:ml-12 lg:ml-20">
+        <div className="flex flex-row flex-wrap sm:flex-wrap justify-center sm:ml-12 lg:ml-20 relative">
+		<img className="img-component-5 absolute" src={images.bg_component_CSM_polygon}></img>
+		<img className="img-component-6 absolute" src={images.bg_component_CSM_gy}></img>
           <div className="lg:w-1/2">
             <span className="tagline">Welcome to my Portfolio</span>
+			<img className="img-component-1 absolute" src={images.bg_component_CSM_green}></img>
+			<img className="img-component-2 absolute" src={images.bg_component_CSM_yellow}></img>
             <img
-              className="profil-img flex-grow justify-center items-center rounded-md lg:hidden my-8"
+              className="profil-img flex-grow justify-center items-center rounded-md lg:hidden my-8 z-1"
               src={images.olabrecq}
               alt="me"
               width="350"
@@ -112,6 +116,8 @@ function About() {
           </div>
         </div>
       </div>
+		  <img className="img-component-3 absolute" src={images.bg_component_CSM_triangle}></img>
+		  <img className="img-component-4 absolute" src={images.bg_component_CSM_line}></img>
     </section>
   );
   //   return (

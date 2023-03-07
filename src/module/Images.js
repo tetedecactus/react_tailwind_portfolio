@@ -20,6 +20,13 @@ import cv_csm_PDF from "../assets/img/cv_csm.pdf";
 
 import olabrecq from "../assets/img/olabrecq.jpg";
 
+import bg_component_CSM_green from "../assets/img/bg_component_CSM_green.svg"
+import bg_component_CSM_yellow from "../assets/img/bg_component_CSM_yellow.svg"
+import bg_component_CSM_triangle from "../assets/img/bg_component_CSM_triangle.svg"
+import bg_component_CSM_line from "../assets/img/bg_component_CSM_line.svg"
+import bg_component_CSM_polygon from "../assets/img/bg_component_CSM_polygon.svg"
+import bg_component_CSM_gy from "../assets/img/bg_component_CSM_gy.svg"
+
 const images = {
     olabrecq,
     logo_l,
@@ -36,7 +43,14 @@ const images = {
     linkedinicons_csm,
     cv_light_PDF,
     cv_dark_PDF,
-    cv_csm_PDF
+    cv_csm_PDF,
+
+	bg_component_CSM_green,
+	bg_component_CSM_yellow,
+	bg_component_CSM_triangle,
+	bg_component_CSM_line,
+	bg_component_CSM_polygon,
+	bg_component_CSM_gy,
 };
 
 export default images;
