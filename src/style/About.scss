@@ -25,7 +25,7 @@
   }
 
   .profil-img {
-    box-shadow: 18px 18px 5px map-get($light-mode, --img-border-color);
+    // box-shadow: 18px 18px 5px map-get($light-mode, --img-border-color);
     border: 4px solid map-get($light-mode, --img-border-color);
   }
 
@@ -73,7 +73,7 @@
   }
 
   .profil-img {
-    box-shadow: 18px 18px 5px map-get($dark-mode, --img-border-color);
+    // box-shadow: 18px 18px 5px map-get($dark-mode, --img-border-color);
     border: 4px solid map-get($dark-mode, --img-border-color);
   }
 

@@ -20,6 +20,20 @@ import cv_csm_PDF from "../assets/img/cv_csm.pdf";
 
 import olabrecq from "../assets/img/olabrecq.jpg";
 
+import bg_component_light_1 from "../assets/img/bg_component_light_1.svg"
+import bg_component_light_2 from "../assets/img/bg_component_light_2.svg"
+import bg_component_light_3 from "../assets/img/bg_component_light_3.svg"
+import bg_component_light_4 from "../assets/img/bg_component_light_4.svg"
+import bg_component_light_5 from "../assets/img/bg_component_light_5.svg"
+import bg_component_light_6 from "../assets/img/bg_component_light_6.svg"
+
+import bg_component_dark_1 from "../assets/img/bg_component_dark_1.svg"
+import bg_component_dark_2 from "../assets/img/bg_component_dark_2.svg"
+import bg_component_dark_3 from "../assets/img/bg_component_dark_3.svg"
+import bg_component_dark_4 from "../assets/img/bg_component_dark_4.svg"
+import bg_component_dark_5 from "../assets/img/bg_component_dark_5.svg"
+import bg_component_dark_6 from "../assets/img/bg_component_dark_6.svg"
+
 import bg_component_CSM_green from "../assets/img/bg_component_CSM_green.svg"
 import bg_component_CSM_yellow from "../assets/img/bg_component_CSM_yellow.svg"
 import bg_component_CSM_triangle from "../assets/img/bg_component_CSM_triangle.svg"
@@ -44,6 +58,20 @@ const images = {
     cv_light_PDF,
     cv_dark_PDF,
     cv_csm_PDF,
+
+	bg_component_light_1,
+	bg_component_light_2,
+	bg_component_light_3,
+	bg_component_light_4,
+	bg_component_light_5,
+	bg_component_light_6,
+
+	bg_component_dark_1,
+	bg_component_dark_2,
+	bg_component_dark_3,
+	bg_component_dark_4,
+	bg_component_dark_5,
+	bg_component_dark_6,
 
 	bg_component_CSM_green,
 	bg_component_CSM_yellow,

@@ -52,12 +52,12 @@ function About() {
         className="about-page container justify-center relative mb-20 py-8 min-h-full m-auto px-10 md:px-12 xl:px-6"
       >
         <div className="flex flex-row flex-wrap sm:flex-wrap justify-center sm:ml-12 lg:ml-20 relative">
-		<img className="img-component-5 absolute" src={images.bg_component_CSM_polygon}></img>
-		<img className="img-component-6 absolute" src={images.bg_component_CSM_gy}></img>
+		<img className="img-component-5 absolute" src={theme === 'light' ? images.bg_component_light_5 : theme === 'dark' ? images.bg_component_dark_5 : images.bg_component_CSM_polygon}></img>
+		<img className="img-component-6 absolute" src={theme === 'light' ? images.bg_component_light_6 : theme === 'dark' ? images.bg_component_dark_6 : images.bg_component_CSM_gy}></img>
           <div className="lg:w-1/2">
             <span className="tagline">Welcome to my Portfolio</span>
-			<img className="img-component-1 absolute" src={images.bg_component_CSM_green}></img>
-			<img className="img-component-2 absolute" src={images.bg_component_CSM_yellow}></img>
+			<img className="img-component-1 absolute" src={theme === 'light' ? images.bg_component_light_1 : theme === 'dark' ? images.bg_component_dark_1 : images.bg_component_CSM_green}></img>
+			<img className="img-component-2 absolute" src={theme === 'light' ? images.bg_component_light_2 : theme === 'dark' ? images.bg_component_dark_2 : images.bg_component_CSM_yellow}></img>
             <img
               className="profil-img flex-grow justify-center items-center rounded-md lg:hidden my-8 z-1"
               src={images.olabrecq}
@@ -65,11 +65,11 @@ function About() {
               width="350"
               height="350"
             />
-            <h2 className="quote mt-20 mx-8 flex-end font-extrabold text-6xl">
+            <h2 className="quote mt-20 mx-8 flex-end font-extrabold relative z-10 text-6xl">
               {`Hi I'm a Programming Student  / `}
               <span className="wrap">{text}</span>
             </h2>
-            <p className="intro text-justify text-xl z-10">
+            <p className="intro text-justify text-xl relative z-10">
               {" "}
               Hello and welcome! My name is Olivier Labrecque-Lacasse, and I am
               a front-end web development intern. I am excited to be part of
@@ -116,8 +116,8 @@ function About() {
           </div>
         </div>
       </div>
-		  <img className="img-component-3 absolute" src={images.bg_component_CSM_triangle}></img>
-		  <img className="img-component-4 absolute" src={images.bg_component_CSM_line}></img>
+		  <img className="img-component-3 absolute" src={theme === 'light' ? images.bg_component_light_3 : theme === 'dark' ? images.bg_component_dark_3 : images.bg_component_CSM_triangle}></img>
+		  <img className="img-component-4 absolute" src={theme === 'light' ? images.bg_component_light_4 : theme === 'dark' ? images.bg_component_dark_4 : images.bg_component_CSM_line}></img>
     </section>
   );
   //   return (
