@@ -1,0 +1,9 @@
+#main {
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+#main > section {
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+}

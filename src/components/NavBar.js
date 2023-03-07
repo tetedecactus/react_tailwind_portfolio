@@ -19,7 +19,7 @@ function NavBar() {
   const { theme } = useContext(ThemeContext);
   return (
     <>
-      <div className="min-h-full">
+      <section className="min-h-full">
         <Disclosure as="nav" className={`${style.nav} ${style[theme]}`}>
           {({ open }) => {
             return (
@@ -99,7 +99,7 @@ function NavBar() {
             );
           }}
         </Disclosure>
-      </div>
+      </section>
     </>
   );
 }

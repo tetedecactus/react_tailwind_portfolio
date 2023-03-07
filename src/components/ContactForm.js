@@ -6,7 +6,7 @@ function ContactForm() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <section class="contact-container">
+    <section class="contact-container h-screen">
       <div class="py-8 lg:py-16 px-16 mx-auto max-w-screen-md">
         <h2 class="title mb-4 text-4xl tracking-tight font-extrabold text-center">
           Contact Me

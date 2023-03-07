@@ -2,7 +2,8 @@
 
 .light {
     .footer-container {
-        background-color: map-get($light-mode, --bg-footer-color);
+        border-bottom: 4px solid map-get($light-mode, --contact-container-border-color);
+		background-color: map-get($light-mode, --bg-footer-color);
     }
 
     .footer-info {
@@ -22,6 +23,7 @@
 
 .dark {
     .footer-container {
+		border-bottom: 4px solid map-get($dark-mode, --contact-container-border-color);
         background-color: map-get($dark-mode, --bg-footer-color);
     }
 
@@ -42,6 +44,7 @@
 
 .CSM {
     .footer-container {
+		border-bottom: 4px solid map-get($CSM-mode, --contact-container-border-color);
         background-color: map-get($CSM-mode, --bg-footer-color);
     }
 

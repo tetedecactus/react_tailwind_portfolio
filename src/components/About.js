@@ -46,7 +46,7 @@ function About() {
   };
 
   return (
-    <div className={`${style.container} ${style[theme]}`}>
+    <section className={`${style.container} ${style[theme]}`}>
       <div
         id="about"
         className="about-page container justify-center mb-20 py-8 min-h-full m-auto px-10 md:px-12 xl:px-6"
@@ -112,7 +112,7 @@ function About() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
   //   return (
   //     <div className={`${style.container} ${style[theme]}`}>

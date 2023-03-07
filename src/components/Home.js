@@ -15,7 +15,7 @@ function HomePage() {
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (
-    <div className={theme}>
+    <section id="main" className={theme}>
       <NavBar />
       <SocialIcons />
       <About />
@@ -26,7 +26,7 @@ function HomePage() {
       <button onClick={() => setTheme(theme === "light" ? "dark" : theme === "dark" ? "CSM" : "light")}>
           <ToggleButton />
       </button>
-    </div>
+    </section>
   );
 }
 
