@@ -20,10 +20,19 @@ $dark-mode: (
   --navbar-mobile-link-color-hover: #fff,
 
   //  ABOUT
+  --welcom-button-color-1: #283035,
+  --welcom-button-color-2: #354249,
+  --welcom-button-border-color: #fff,
+  --welcom-button-text-color: #c72931,
   --img-border-color: #283035,
   --name-text-color: #fff,
   --text-color: #c72931,
   --description-text-color: #fff,
+  --connect-button-bg-color: #283035,
+  --connect-button-text-color: #fff,
+  --connect-button-border-color: #c72931,
+  --bg-connect-button-color-hover: #303a40,
+  --connect-button-text-color-hover: #c72931,
 
   //  CV BUTTON
   --bg-cv-button-color: #283035,
@@ -37,7 +46,7 @@ $dark-mode: (
   --icons-color: #c72931,
 
   // CONTACT FORM
-  --bg-contact-color : #283035,
+  --bg-contact-color: #283035,
   --contact-container-border-color: #c72931,
   --contact-text-color: #fff,
   --paragraph-contact-color: #fff,
@@ -45,6 +54,12 @@ $dark-mode: (
   --contact-input-bg-color: #303a40,
   --contact-input-text-color: #fff,
   --contact-input-border-color: #fff,
+  //FOOTER
+  --bg-footer-color: #303a40,
+  --footer-info-color: #c72931,
+  --footer-about-color: #c72931,
+  --footer-text-color: #fff,
+  --footer-copyright-color: #c72931,
 );
 
 $light-mode: (
@@ -70,10 +85,19 @@ $light-mode: (
   --navbar-mobile-link-color-hover: #fff,
 
   //  ABOUT
+  --welcom-button-color-1: #adacaa,
+  --welcom-button-color-2: #adacaa,
+  --welcom-button-border-color: #020001,
+  --welcom-button-text-color: #fff,
   --img-border-color: #fff,
   --name-text-color: #fff,
   --text-color: #020001,
   --description-text-color: #fff,
+  --connect-button-bg-color: #adacaa,
+  --connect-button-text-color: #fff,
+  --connect-button-border-color: #020001,
+  --bg-connect-button-color-hover: #dec79e,
+  --connect-button-text-color-hover: #020001,
 
   //  CV BUTTON
   --bg-cv-button-color: #adacaa,
@@ -86,7 +110,7 @@ $light-mode: (
   --line-color: #adacaa,
 
   // CONTACT FORM
-  --bg-contact-color : #adacaa,
+  --bg-contact-color: #adacaa,
   --contact-container-border-color: #020001,
   --contact-text-color: #020001,
   --paragraph-contact-color: #020001,
@@ -94,6 +118,14 @@ $light-mode: (
   --contact-input-bg-color: #dec79e,
   --contact-input-text-color: #020001,
   --contact-input-border-color: #020001,
+
+  //FOOTER
+  --bg-footer-color: #dec79e,
+  --footer-info-color: #020001,
+  --footer-about-color: #fff,
+  --footer-text-color: #020001,
+  --footer-copyright-color: #adacaa,
+
 );
 
 $CSM-mode: (
@@ -118,11 +150,20 @@ $CSM-mode: (
   --navbar-mobile-link-color-hover: #586bb8,
 
   //  ABOUT
+  --welcom-button-color-1: #fe5455,
+  --welcom-button-color-2: #fe5455,
+  --welcom-button-border-color: #64bd49,
+  --welcom-button-text-color: #586bb8,
   --img-border-color: #64bd49,
   --name-text-color: #64bd49,
   --text-color: #fe5455,
   --description-text-color: #ffff0b,
-
+  --connect-button-bg-color: #64bd49,
+  --connect-button-text-color: #586bb8,
+  --connect-button-border-color: #ffff0b,
+  --bg-connect-button-color-hover: #586bb8,
+  --connect-button-text-color-hover: #64bd49,
+  // --connect-button-bg-color
   //  CV BUTTON
   --bg-cv-button-color: #64bd49,
   --cv-button-text-color: #586bb8,
@@ -134,7 +175,7 @@ $CSM-mode: (
   --line-color: #64bd49,
 
   // CONTACT FORM
-  --bg-contact-color : #64bd49,
+  --bg-contact-color: #64bd49,
   --contact-container-border-color: #ffff0b,
   --contact-text-color: #586bb8,
   --paragraph-contact-color: #020001,
@@ -142,4 +183,11 @@ $CSM-mode: (
   --contact-input-bg-color: #586bb8,
   --contact-input-text-color: #ffff0b,
   --contact-input-border-color: #ffff0b,
+
+  //FOOTER
+  --bg-footer-color: #586bb8,
+  --footer-info-color: #fe5455,
+  --footer-about-color: #fe5455,
+  --footer-text-color: #64bd49,
+  --footer-copyright-color: #ffff0b,
 );

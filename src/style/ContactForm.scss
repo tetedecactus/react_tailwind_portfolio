@@ -2,8 +2,8 @@
 
 .light {
     .contact-container {
-        border-top: 3px solid map-get($light-mode, --contact-container-border-color);
-        border-bottom: 3px solid map-get($light-mode, --contact-container-border-color);
+        border-top: 4px solid map-get($light-mode, --contact-container-border-color);
+        border-bottom: 4px solid map-get($light-mode, --contact-container-border-color);
         background-color: map-get($light-mode, --bg-contact-color);
     }
 
@@ -31,8 +31,8 @@
 
 .dark {
     .contact-container {
-        border-top: 3px solid map-get($dark-mode, --contact-container-border-color);
-        border-bottom: 3px solid map-get($dark-mode, --contact-container-border-color);
+        border-top: 4px solid map-get($dark-mode, --contact-container-border-color);
+        border-bottom: 4px solid map-get($dark-mode, --contact-container-border-color);
         background-color: map-get($dark-mode, --bg-contact-color);
     }
 
@@ -60,8 +60,8 @@
 
 .CSM {
     .contact-container {
-        border-top: 3px solid map-get($CSM-mode, --contact-container-border-color);
-        border-bottom: 3px solid map-get($CSM-mode, --contact-container-border-color);
+        border-top: 4px solid map-get($CSM-mode, --contact-container-border-color);
+        border-bottom: 4px solid map-get($CSM-mode, --contact-container-border-color);
         background-color: map-get($CSM-mode, --bg-contact-color);
     }
 

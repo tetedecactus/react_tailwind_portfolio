@@ -1,9 +1,9 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import images from "../module/Images"
+import images from "../module/Images";
 import style from "../style/Navbar.scss";
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext.tsx";
+import { ThemeContext } from "../context/ThemeContext.js";
 
 const navigation = [
   { name: "About", href: "#about", current: true },
@@ -31,7 +31,13 @@ function NavBar() {
                       <div className="flex-shrink-0">
                         <img
                           className="h-18 w-20"
-                          src={(theme === 'light' ? images.logo_l : theme === 'dark' ? images.logo_d : images.logo_csm)}
+                          src={
+                            theme === "light"
+                              ? images.logo_l
+                              : theme === "dark"
+                              ? images.logo_d
+                              : images.logo_csm
+                          }
                           alt="olablac logo"
                         />
                       </div>

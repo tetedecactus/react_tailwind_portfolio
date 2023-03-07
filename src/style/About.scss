@@ -20,16 +20,31 @@
     color: map-get($light-mode, --text-color);
   }
 
-  .description {
+  .intro {
     color: map-get($light-mode, --description-text-color);
   }
 
   .profil-img {
+    box-shadow: 18px 18px 5px map-get($light-mode, --img-border-color);
     border: 4px solid map-get($light-mode, --img-border-color);
   }
 
   .about-card {
     transition: 0.6s;
+  }
+  .tagline {
+    color: map-get($light-mode, --welcom-button-text-color);
+    border: 4px solid map-get($light-mode, --welcom-button-border-color);
+    background: linear-gradient(90.21deg, map-get($light-mode, --welcom-button-color-1) -5.91%, map-get($light-mode, --welcom-button-color-2) 100%);
+  }
+  .connect-button {
+    border: 4px solid map-get($light-mode, --connect-button-border-color);
+    color: map-get($light-mode, --connect-button-text-color);
+    background-color: map-get($light-mode, --connect-button-bg-color );
+  }
+  .connect-button:hover {
+    color: map-get($light-mode, --connect-button-text-color-hover);
+    background-color: map-get($light-mode, --bg-connect-button-color-hover);
   }
 }
 
@@ -53,17 +68,33 @@
     color: map-get($dark-mode, --text-color);
   }
 
-  .description {
+  .intro {
     color: map-get($dark-mode, --description-text-color);
   }
 
   .profil-img {
+    box-shadow: 18px 18px 5px map-get($dark-mode, --img-border-color);
     border: 4px solid map-get($dark-mode, --img-border-color);
   }
 
   .about-card {
     transition: 0.6s;
   }
+  .tagline {
+    color: map-get($dark-mode, --welcom-button-text-color);
+    border: 4px solid map-get($dark-mode, --welcom-button-border-color);
+    background: linear-gradient(90.21deg, map-get($dark-mode, --welcom-button-color-1) -5.91%, map-get($dark-mode, --welcom-button-color-2) 100%);
+  }
+  .connect-button {
+    border: 4px solid map-get($dark-mode, --connect-button-border-color);
+    color: map-get($dark-mode, --connect-button-text-color);
+    background-color: map-get($dark-mode, --connect-button-bg-color );
+  }
+  .connect-button:hover {
+    color: map-get($dark-mode, --connect-button-text-color-hover);
+    background-color: map-get($dark-mode, --bg-connect-button-color-hover);
+  }
+
 }
 
 .CSM {
@@ -86,19 +117,34 @@
     color: map-get($CSM-mode, --text-color);
   }
 
-  .description {
+  .intro {
     color: map-get($CSM-mode, --description-text-color);
   }
 
   .profil-img {
+    box-shadow: 18px 18px 5px map-get($CSM-mode, --img-border-color);
     border: 4px solid map-get($CSM-mode, --img-border-color);
   }
 
   .about-card {
     transition: 0.6s;
   }
-}
+  .tagline {
 
+    color: map-get($CSM-mode, --welcom-button-text-color);
+    border: 4px solid map-get($CSM-mode, --welcom-button-border-color);
+    background: linear-gradient(90.21deg, map-get($CSM-mode, --welcom-button-color-1) -5.91%, map-get($CSM-mode, --welcom-button-color-2) 100%);
+  }
+  .connect-button {
+    border: 4px solid map-get($CSM-mode, --connect-button-border-color);
+    color: map-get($CSM-mode, --connect-button-text-color);
+    background-color: map-get($CSM-mode, --connect-button-bg-color );
+  }
+  .connect-button:hover {
+    color: map-get($CSM-mode, --connect-button-text-color-hover);
+    background-color: map-get($CSM-mode, --bg-connect-button-color-hover);
+  }
+}
 
 // .about-card:hover  .description {
 // 	transition: 0.6s;
@@ -119,8 +165,37 @@
   top: 25%;
 }
 
-.description {
+.intro {
   @media only screen and (max-width: 350px) {
     display: none;
+  }
+}
+
+.tagline {
+  display: flex-wrap;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  overflow-x: hidden;
+}
+
+.profil-img {
+  box-shadow: 18px 18px 5px #7f5af2;
+  animation: upDown 3s linear infinite;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateY(-20px);
   }
 }

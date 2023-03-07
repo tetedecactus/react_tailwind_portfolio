@@ -5,13 +5,14 @@ import NavBar from "./NavBar";
 import SocialIcons from "./SocialIcons";
 import "../../src/App.scss";
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext.tsx";
+import { ThemeContext } from "../context/ThemeContext.js";
 import ToggleButton from "./ToggleButton";
 import ContactForm from "./ContactForm";
+import Footer from "./Footer";
 
-function Home() {
+function HomePage() {
+
   const { theme, setTheme } = useContext(ThemeContext);
-  
 
   return (
     <div className={theme}>
@@ -21,11 +22,12 @@ function Home() {
       <CvButton />
       {/* <ProjectBanner /> */}
       <ContactForm />
-      <button onClick={() => setTheme(theme === 'light' ? 'dark' : theme === 'dark' ? 'CSM' : 'light')}>
-        <ToggleButton />
+      <Footer />
+      <button onClick={() => setTheme(theme === "light" ? "dark" : theme === "dark" ? "CSM" : "light")}>
+          <ToggleButton />
       </button>
     </div>
   );
 }
 
-export default Home;
+export default HomePage;

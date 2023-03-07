@@ -1,5 +1,9 @@
 @import './LightDarkMode.scss';
 
+.scrolled {
+    visibility: hidden;
+}
+
 .light {
     .cv-button {
         bottom: 7%;

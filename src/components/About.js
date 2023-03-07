@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
+import images from "../module/Images";
 import style from "../style/About.scss";
 import "../style/LightDarkMode.scss";
-import olabrecq from "../assets/img/olabrecq.jpg";
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext.tsx";
-
+import { ThemeContext } from "../context/ThemeContext.js";
 function About() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -47,61 +46,133 @@ function About() {
   };
 
   return (
-	<div className={`${style.container} ${style[theme]}`}>
-		<div id="about" className="min-h-full py-8 px-10 about-page">
-		<div className="container m-auto px-6 md:px-12 xl:px-6">
-			<div className="md:1/12 lg:1/12 mb:20">
-			<p className="iam mt-5 sm:text-start md:text-center font-bold text-sm">
-				I am
-			</p>
-			</div>
-			<div className="about-card">
-			<div className="about-card space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-				<div className="md:7/12 lg:w-8/12">
-				<h2 className="name z-10 text-2xl font-bold md:text-4xl md:absolute lg:absolute">
-					Olivier Labrecque <br />
-					Lacasse
-				</h2>
-				</div>
-				<div className="md:1/12 lg:w-6/12 justify-center">
-				<img
-					className="profil-img rounded-md sticky"
-					src={olabrecq}
-					alt="me"
-					width="250"
-					height="250"
-				/>
-				</div>
-			</div>
-			<div>
-				<h2 className="quote mt-20 mx-8 lg:ml-40 sm:text-center flex-end font-bold text-xl">
-				{`Programming Student  & `}
-				<span className="wrap">{text}</span>
-				</h2>
-				<div className="description xsm:hidden lg:px-24 md:px-12 text-justify">
-				<p>
-					{" "}
-					Hello and welcome! My name is Olivier Labrecque-Lacasse, and I
-					am a front-end web development intern. I am excited to be part
-					of this team and have the opportunity to work on challenging
-					projects that will allow me to develop my skills and gain
-					real-world experience in the field. My background in 42 Quebec
-					has provided me with a strong foundation in HTML, CSS,
-					JavaScript, React, Wordpress and other web development
-					technologies. I am eager to learn from experienced professionals
-					and contribute my knowledge and creativity to the team. I am
-					confident that this internship will not only help me grow as a
-					developer but also make a valuable contribution to the
-					organization. Thank you for the opportunity, and I look forward
-					to working with you.
-				</p>
-				</div>
-			</div>
-			</div>
-		</div>
-		</div>
-	</div>
+    <div className={`${style.container} ${style[theme]}`}>
+      <div
+        id="about"
+        className="about-page container justify-center mb-20 py-8 min-h-full m-auto px-10 md:px-12 xl:px-6"
+      >
+        <div className="flex flex-row flex-wrap sm:flex-wrap justify-center sm:ml-12 lg:ml-20">
+          <div className="lg:w-1/2">
+            <span className="tagline">Welcome to my Portfolio</span>
+            <img
+              className="profil-img flex-grow justify-center items-center rounded-md lg:hidden my-8"
+              src={images.olabrecq}
+              alt="me"
+              width="350"
+              height="350"
+            />
+            <h2 className="quote mt-20 mx-8 flex-end font-extrabold text-6xl">
+              {`Hi I'm a Programming Student  / `}
+              <span className="wrap">{text}</span>
+            </h2>
+            <p className="intro text-justify text-xl">
+              {" "}
+              Hello and welcome! My name is Olivier Labrecque-Lacasse, and I am
+              a front-end web development intern. I am excited to be part of
+              this team and have the opportunity to work on challenging projects
+              that will allow me to develop my skills and gain real-world
+              experience in the field. My background in 42 Quebec has provided
+              me with a strong foundation in HTML, CSS, JavaScript, React,
+              Wordpress and other web development technologies. I am eager to
+              learn from experienced professionals and contribute my knowledge
+              and creativity to the team. I am confident that this internship
+              will not only help me grow as a developer but also make a valuable
+              contribution to the organization. Thank you for the opportunity,
+              and I look forward to working with you.
+            </p>
+            <div>
+              <button className="connect-button border font-bold rounded-md px-4 py-4 mt-6 mr-6">
+                Let's Connect
+              </button>
+              <a
+                href={
+                  theme === "light"
+                    ? images.cv_light_PDF
+                    : theme === "dark"
+                    ? images.cv_dark_PDF
+                    : images.cv_csm_PDF
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="connect-button border font-bold rounded-md px-4 py-4 mt-6">
+                  DOWNLOAD C.V
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className="lg:w-1/2 flex items-center justify-center px-6">
+            <img
+              className="profil-img  rounded-md"
+              src={images.olabrecq}
+              alt="me"
+              width="450"
+              height="450"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   );
+  //   return (
+  //     <div className={`${style.container} ${style[theme]}`}>
+  //       <div id="about" className="min-h-full py-8 px-10 about-page">
+  //         <div className="container m-auto px-6 md:px-12 xl:px-6">
+  //           <div className="md:1/12 lg:1/12 mb:20">
+  //             <p className="iam mt-5 sm:text-start md:text-center font-bold text-sm">
+  //               I am
+  //             </p>
+  //           </div>
+  //           <div className="about-card">
+  //             <div className="about-card space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+  //               <div className="md:7/12 lg:w-8/12">
+  //                 <h2 className="name z-10 text-2xl font-bold md:text-4xl md:absolute lg:absolute">
+  //                   Olivier Labrecque <br />
+  //                   Lacasse
+  //                 </h2>
+  //               </div>
+  //               <div className="md:1/12 lg:w-6/12 justify-center">
+  //                 <img
+  //                   className="profil-img rounded-md sticky"
+  //                   src={images.olabrecq}
+  //                   alt="me"
+  //                   width="350"
+  //                   height="350"
+  //                 />
+  //               </div>
+  //             </div>
+  //             <div>
+  //               <h2 className="quote mt-20 mx-8 lg:ml-40 sm:text-center flex-end font-extrabold text-4xl">
+  //                 {`Programming Student  & `}
+  //                 <span className="wrap">{text}</span>
+  //               </h2>
+  //               <div className="description xsm:hidden lg:px-24 md:px-12 text-justify">
+  //                 <p>
+  //                   {" "}
+  //                   Hello and welcome! My name is Olivier Labrecque-Lacasse, and I
+  //                   am a front-end web development intern. I am excited to be part
+  //                   of this team and have the opportunity to work on challenging
+  //                   projects that will allow me to develop my skills and gain
+  //                   real-world experience in the field. My background in 42 Quebec
+  //                   has provided me with a strong foundation in HTML, CSS,
+  //                   JavaScript, React, Wordpress and other web development
+  //                   technologies. I am eager to learn from experienced
+  //                   professionals and contribute my knowledge and creativity to
+  //                   the team. I am confident that this internship will not only
+  //                   help me grow as a developer but also make a valuable
+  //                   contribution to the organization. Thank you for the
+  //                   opportunity, and I look forward to working with you.
+  //                 </p>
+  // 				{/* <a href={(theme === 'light' ? images.cv_light_PDF : theme === 'dark' ? images.cv_dark_PDF : images.cv_csm_PDF)} target="_blank" rel="noopener noreferrer">
+  // 					<button>DOWNLOAD C.V</button>
+  // 				</a> */}
+  //               </div>
+  //             </div>
+  //           </div>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   );
 }
 
 export default About;

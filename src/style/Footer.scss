@@ -1,0 +1,61 @@
+@import './LightDarkMode.scss';
+
+.light {
+    .footer-container {
+        background-color: map-get($light-mode, --bg-footer-color);
+    }
+
+    .footer-info {
+        color: map-get($light-mode, --footer-info-color);
+
+    }
+    .footer-about {
+        color: map-get($light-mode, --footer-about-color);
+    }
+    .footer-text {
+        color: map-get($light-mode, --footer-text-color);
+    }
+    #copyright {
+        color: map-get($light-mode, --footer-copyright-color);
+    }
+}
+
+.dark {
+    .footer-container {
+        background-color: map-get($dark-mode, --bg-footer-color);
+    }
+
+    .footer-info {
+        color: map-get($dark-mode, --footer-info-color);
+
+    }
+    .footer-about {
+        color: map-get($dark-mode, --footer-about-color);
+    }
+    .footer-text {
+        color: map-get($dark-mode, --footer-text-color);
+    }
+    #copyright {
+        color: map-get($dark-mode, --footer-copyright-color);
+    }
+}
+
+.CSM {
+    .footer-container {
+        background-color: map-get($CSM-mode, --bg-footer-color);
+    }
+
+    .footer-info {
+        color: map-get($CSM-mode, --footer-info-color);
+
+    }
+    .footer-about {
+        color: map-get($CSM-mode, --footer-about-color);
+    }
+    .footer-text {
+        color: map-get($CSM-mode, --footer-text-color);
+    }
+    #copyright {
+        color: map-get($CSM-mode, --footer-copyright-color);
+    }
+}
