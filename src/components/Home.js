@@ -18,7 +18,7 @@ function HomePage() {
 
     const bouton = document.getElementById('But');
 
-
+	
     console.log(bouton);
     if (bouton) {
       console.log(bouton);
@@ -27,16 +27,16 @@ function HomePage() {
         bouton.addEventListener('click', function() {
           if (theme == 'CSM') {
             console.log('inside this 1st shit');
-            bouton.innerHTML = 'Light Theme';
+            bouton.innerHTML = 'Dark Theme';
           }
           else if (theme == 'dark') {
             console.log('inside this 2st shit');
             console.log(bouton)
-            bouton.innerHTML = 'CHAINESAW MAN THEME';
+            bouton.innerHTML = 'Light Theme';
           }
           else {
             console.log('inside this 3st shit');
-            bouton.innerHTML = 'Dark Theme';
+            bouton.innerHTML = 'CHAINESAW MAN THEME';
           }
         });
     }
