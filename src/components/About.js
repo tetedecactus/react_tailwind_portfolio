@@ -103,7 +103,7 @@ function About() {
               src={images.olabrecq}
               alt="me"
             />
-            <h1 className="quote my-6 flex-end font-extrabold relative sm:text-4xl md:text-4xl lg:text-6xl">
+            <h1 className="quote my-6 flex-end font-extrabold relative lg:text-6xl">
               {`Hi I'm a Programming Student  / `}
               <span className="wrap">{text}</span>
             </h1>
