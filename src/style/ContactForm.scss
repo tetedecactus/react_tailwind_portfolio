@@ -4,6 +4,13 @@
   scroll-snap-align: start;
 }
 
+input:focus {
+	outline: none;
+}
+textarea:focus {
+	outline: none;
+}
+
 .send-button:hover {
     transition: transform 0.3s ease-in-out;
     transform: translateX(10%);
@@ -60,7 +67,7 @@
     color: map-get($dark-mode, --contact-text-color);
   }
 
-  p {
+  .contact-text {
     color: map-get($dark-mode, --paragraph-contact-color);
   }
   label {
@@ -99,7 +106,7 @@
     color: map-get($CSM-mode, --contact-text-color);
   }
 
-  p {
+  .contact-text {
     color: map-get($CSM-mode, --paragraph-contact-color);
   }
   label {
