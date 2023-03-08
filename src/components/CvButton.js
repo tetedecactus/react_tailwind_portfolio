@@ -10,10 +10,10 @@ function CvButton() {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY <= 700) {
-        setScrolled(true);
-      } else {
+      if (window.scrollY >= 700) {
         setScrolled(false);
+      } else {
+        setScrolled(true);
       }
     };
 
@@ -24,7 +24,7 @@ function CvButton() {
 
   return (
     <div className={`${style.container} ${style[theme]}`}>
-      <div className={scrolled ? "scrolled" : "cv-button fixed z-10 font-bold px-4 py-4 rounded-md"}>
+      <div className={scrolled ? "scrolled" : "cv-button  fixed z-10 font-bold px-4 py-4 rounded-md"}>
         <a
           href={
             theme === "light"

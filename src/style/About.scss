@@ -1,10 +1,14 @@
 @import "./LightDarkMode.scss";
 
+.about-page {
+  scroll-snap-align: start;
+}
+
 .light {
   .about-page {
     margin-top: 100px;
     position: relative;
-    // height: 100vh !important;  
+    height: 100vh !important;
     background-color: map-get($light-mode, --bg-color);
   }
 
@@ -35,12 +39,16 @@
   .tagline {
     color: map-get($light-mode, --welcom-button-text-color);
     border: 4px solid map-get($light-mode, --welcom-button-border-color);
-    background: linear-gradient(90.21deg, map-get($light-mode, --welcom-button-color-1) -5.91%, map-get($light-mode, --welcom-button-color-2) 100%);
+    background: linear-gradient(
+      90.21deg,
+      map-get($light-mode, --welcom-button-color-1) -5.91%,
+      map-get($light-mode, --welcom-button-color-2) 100%
+    );
   }
   .connect-button {
     border: 4px solid map-get($light-mode, --connect-button-border-color);
     color: map-get($light-mode, --connect-button-text-color);
-    background-color: map-get($light-mode, --connect-button-bg-color );
+    background-color: map-get($light-mode, --connect-button-bg-color);
   }
   .connect-button:hover {
     color: map-get($light-mode, --connect-button-text-color-hover);
@@ -52,7 +60,7 @@
   .about-page {
     margin-top: 100px;
     position: relative;
-    // height: 100vh !important;
+    height: 100vh !important;
     background-color: map-get($dark-mode, --bg-color);
   }
 
@@ -83,25 +91,28 @@
   .tagline {
     color: map-get($dark-mode, --welcom-button-text-color);
     border: 4px solid map-get($dark-mode, --welcom-button-border-color);
-    background: linear-gradient(90.21deg, map-get($dark-mode, --welcom-button-color-1) -5.91%, map-get($dark-mode, --welcom-button-color-2) 100%);
+    background: linear-gradient(
+      90.21deg,
+      map-get($dark-mode, --welcom-button-color-1) -5.91%,
+      map-get($dark-mode, --welcom-button-color-2) 100%
+    );
   }
   .connect-button {
     border: 4px solid map-get($dark-mode, --connect-button-border-color);
     color: map-get($dark-mode, --connect-button-text-color);
-    background-color: map-get($dark-mode, --connect-button-bg-color );
+    background-color: map-get($dark-mode, --connect-button-bg-color);
   }
   .connect-button:hover {
     color: map-get($dark-mode, --connect-button-text-color-hover);
     background-color: map-get($dark-mode, --bg-connect-button-color-hover);
   }
-
 }
 
 .CSM {
   .about-page {
     margin-top: 100px;
     position: relative;
-    // height: 100vh  !important;
+    height: 100vh !important;
     background-color: map-get($CSM-mode, --bg-color);
   }
 
@@ -130,29 +141,30 @@
     transition: 0.6s;
   }
   .tagline {
-
     color: map-get($CSM-mode, --welcom-button-text-color);
     border: 4px solid map-get($CSM-mode, --welcom-button-border-color);
-    background: linear-gradient(90.21deg, map-get($CSM-mode, --welcom-button-color-1) -5.91%, map-get($CSM-mode, --welcom-button-color-2) 100%);
+    background: linear-gradient(
+      90.21deg,
+      map-get($CSM-mode, --welcom-button-color-1) -5.91%,
+      map-get($CSM-mode, --welcom-button-color-2) 100%
+    );
   }
   .connect-button {
     border: 4px solid map-get($CSM-mode, --connect-button-border-color);
     color: map-get($CSM-mode, --connect-button-text-color);
-    background-color: map-get($CSM-mode, --connect-button-bg-color );
+    background-color: map-get($CSM-mode, --connect-button-bg-color);
   }
   .connect-button:hover {
     color: map-get($CSM-mode, --connect-button-text-color-hover);
     background-color: map-get($CSM-mode, --bg-connect-button-color-hover);
+    // transform: translateX(50%);
   }
 }
 
-// .about-card:hover  .description {
-// 	transition: 0.6s;
-// 	display: block;
-// 	text-align: justify;
-// 	width: 500px;
-
-// }
+.connect-button:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(10%);
+}
 
 .quote {
   margin-bottom: 6%;
@@ -183,7 +195,6 @@
 }
 
 .profil-img {
-//   box-shadow: 18px 18px 5px #7f5af2;
   animation: upDown 3s linear infinite;
 }
 
@@ -211,46 +222,53 @@
   }
 }
 
-
 .img-component-1 {
-	animation: upDown 3s linear infinite;
-	top: 7%;
-	right: 2%;
+  animation: upDown 3s linear infinite;
+  top: 7%;
+  right: 2%;
+  @media only screen and (max-width: 400px) {
+    display: none;
+  }
 }
 
 .img-component-2 {
-	animation: downUp 3s linear infinite;
-	bottom: 2%;
-	left: 90%;
+  animation: downUp 3s linear infinite;
+  bottom: 2%;
+  left: 90%;
 }
 
 .img-component-3 {
-	animation: downUp 3s linear infinite;
-	bottom: 2%;
-	left: 8%;
+  animation: downUp 3s linear infinite;
+  bottom: 2%;
+  left: 8%;
+  @media only screen and (max-width: 400px) {
+    display: none;
+  }
 }
 
 .img-component-4 {
-	animation: upDown 3s linear infinite;
-	bottom: 2%;
-	left: 60%;
+  animation: upDown 3s linear infinite;
+  bottom: 2%;
+  left: 60%;
 }
 
 .img-component-5 {
-	animation: upDown 3s linear infinite;
-	top: 12%;
-	right: 60%;
+  animation: upDown 3s linear infinite;
+  top: 12%;
+  right: 60%;
+  @media only screen and (max-width: 700px) {
+    display: none;
+  }
 }
 
 .img-component-6 {
-	animation: upDown 3s linear infinite;
-	top: 42%;
-	right: 42%;
+  animation: upDown 3s linear infinite;
+  top: 42%;
+  right: 42%;
 }
 
-
-  @media (max-width: 1024px) {
-    #profile-img-1 {
-      display: none;
-    }
+@media (max-width: 1024px) {
+  #profile-img-1 {
+    display: none;
   }
+}

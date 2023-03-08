@@ -1,62 +1,104 @@
 import style from "../style/ContactForm.scss";
-import { useContext } from "react";
+import emailjs from '@emailjs/browser'
+import { useContext, useRef } from "react";
 import { ThemeContext } from "../context/ThemeContext.js";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ContactForm() {
   const { theme } = useContext(ThemeContext);
 
+  const notify = () => {
+    toast.success('Message Send!', {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    });
+  };
+
+  const errorNotify = () => {
+    toast.error('Error Message Not Send', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
+  }
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_ID)
+      .then((result) => {
+        notify();
+      }, (error) => {
+        errorNotify();
+      });
+  };
+
   return (
-    <section class="contact-container h-screen">
-      <div class="py-8 lg:py-16 px-16 mx-auto max-w-screen-md">
-        <h2 class="title mb-4 text-4xl tracking-tight font-extrabold text-center">
+    <section id="contact" class="contact-container h-full overflow-x-hidden">
+      <div class="py-8 lg:py-16 px-16 mx-auto max-w-screen-md relative h-full mt-20">
+        <h2 class="title mb-8 text-4xl tracking-tight font-extrabold text-center">
           Contact Me
         </h2>
-        <p class="mb-8 lg:mb-16 font-light text-center sm:text-xl">
-          Got a technical issue? Want to send feedback about a beta feature?
-          Need details about our Business plan? Let us know.
+        <p class="contact-text mb-8 lg:mb-16 font-bold text-center sm:text-xl">
+          Want to send feedback about a this awesome Portfolio?
+          Want pass me in interview? Just let me know. :)
         </p>
-        <form action="#" class="space-y-8">
+        <form ref={form} onSubmit={sendEmail} action="#" class="space-y-8">
           <div>
-            <label for="email" class="block mb-2 text-sm font-medium">
+            <label for="email" class="block mb-2 text-sm font-large font-bold">
               Your email
             </label>
             <input
               type="email"
               id="email"
-              class="shadow-sm text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500 t"
+              class="shadow-sm text-sm rounded-lg w-full p-2.5"
               placeholder="name@SomeStuff.com"
               required
             />
           </div>
           <div>
-            <label for="subject" class="block mb-2 text-sm font-medium">
+            <label for="subject" class="block mb-2 text-sm font-large font-bold">
               Subject
             </label>
             <input
               type="text"
               id="subject"
-              class="block p-3 w-full text-sm rounded-lg shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-              placeholder="Let us know how we can help you"
+              class="block p-3 w-full text-sm rounded-lg"
+              placeholder=""
               required
             />
           </div>
           <div class="sm:col-span-2">
-            <label for="message" class=" block mb-2 text-sm font-medium">
+            <label for="message" class=" block mb-2 text-sm font-large font-bold">
               Your message
             </label>
             <textarea
               id="message"
               rows="6"
-              class="block p-2.5 w-full text-sm rounded-lg shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              class="block p-2.5 w-full text-sm rounded-lg shadow-sm"
               placeholder="Leave a comment..."
             ></textarea>
           </div>
           <button
             type="submit"
-            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            class="send-button py-4 px-4 text-sm font-medium font-bold text-center rounded-lg"
           >
             Send message
           </button>
+          <ToastContainer />
         </form>
       </div>
     </section>

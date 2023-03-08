@@ -19,12 +19,12 @@ function NavBar() {
   const { theme } = useContext(ThemeContext);
   return (
     <>
-      <section className="min-h-full">
+      <section className="min-h-full relative">
         <Disclosure as="nav" className={`${style.nav} ${style[theme]}`}>
           {({ open }) => {
             return (
               <>
-                <div className="nav mx-auto max-w-8xl">
+                <div className="nav mx-auto max-w-8xl relative">
                   <div className="nav-container flex h-20 px-4  items-center justify-between">
                     <div className="w-full flex items-center  text-center sm:flex-row  sm:justify-between py-4 px-6  sm:items-center w-full">
                       {/* Logo */}
@@ -59,9 +59,9 @@ function NavBar() {
                         </div>
                       </div>
                     </div>
-                    <div className="-mr-2 flex md:hidden">
+                    <div className="-mr-2 flex md:hidden relative">
                       {/* Mobile menu button */}
-                      <Disclosure.Button className="nav-mobile-button inline-flex items-center justify-center rounded-md p-2 focus:outline-none ">
+                      <Disclosure.Button className="nav-mobile-button relative inline-flex items-center justify-center rounded-md p-2 focus:outline-none ">
                         <span className="sr-only">Open main menu</span>
                         {open ? (
                           <XMarkIcon
@@ -79,14 +79,14 @@ function NavBar() {
                   </div>
                 </div>
                 <Disclosure.Panel className="md:hidden">
-                  <div className=" space-y-1 px-2 pt-2 pb-3 sm:px-3">
+                  <div className=" space-y-1 relative px-2 pt-2 pb-3 sm:px-3">
                     {navigation.map((item) => (
                       <Disclosure.Button
                         key={item.name}
                         as="a"
                         href={item.href}
                         className={
-                          "nav-mobile-link block px-3 py-2 rounded-md text-base font-medium"
+                          "nav-mobile-link relative block px-3 py-2 rounded-md text-base font-medium"
                         }
                         aria-current={item.current ? "page" : undefined}
                       >

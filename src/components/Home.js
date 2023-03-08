@@ -14,18 +14,41 @@ function HomePage() {
 
   const { theme, setTheme } = useContext(ThemeContext);
 
+  // const themeButton = document.getElementById("themeButton");
+  // const body = document.bsection.themeButton;
+
+  
+
+  // themeButton.addEventListener("click", function() {
+  //   // Vérifiez la classe actuelle du corps de la page et modifiez-la en conséquence
+  //   if (body.classList.contains("dark")) {
+  //     body.classList.remove("dark");
+  //     body.classList.add("light");
+  //     themeButton.textContent = "Thème sombre";
+  //   } else if (body.classList.contains("light")) {
+  //     body.classList.remove("light");
+  //     body.classList.add("CSM");
+  //     themeButton.textContent = "Thème lumineux";
+  //   } else {
+  //     body.classList.remove("CSM");
+  //     body.classList.add("dark");
+  //     themeButton.textContent = "Thème coloré";
+  //   }
+  // });
+
   return (
-    <section id="main" className={theme}>
+    <section id="themeButton" className={theme}>
       <NavBar />
       <SocialIcons />
       <About />
       <CvButton />
       {/* <ProjectBanner /> */}
       <ContactForm />
-      <Footer />
-      <button onClick={() => setTheme(theme === "light" ? "dark" : theme === "dark" ? "CSM" : "light")}>
-          <ToggleButton />
+      <button id="theme-button" onClick={() => setTheme(theme === "light" ? "dark" : theme === "dark" ? "CSM" : "light")}>
+          <ToggleButton/>
+          {/* switch theme */}
       </button>
+      <Footer />
     </section>
   );
 }
