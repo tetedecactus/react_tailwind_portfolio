@@ -50,6 +50,8 @@ export default function ProjectTabs() {
         </TabList>
         <TabPanel className="items-center justify-center">
 			<img src={images.fdf} width={400} height={300}></img>
+			<img src={images.transcendence} width={400} height={300}></img>
+			<img src={images.transcendence_gif} width={400} height={300}></img>
 		</TabPanel>
         <TabPanel></TabPanel>
         <TabPanel></TabPanel>
