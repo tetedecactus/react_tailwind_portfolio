@@ -49,12 +49,12 @@ function ContactForm() {
   return (
     <section id="contact" className="contact-container h-full overflow-x-hidden">
       <div className="py-8 lg:py-16 px-16 mx-auto max-w-screen-md relative h-full mt-20">
-        <h2 className="title mb-8 text-4xl tracking-tight font-extrabold text-center">
+        <h2 className="title mb-8 text-6xl tracking-tight font-extrabold text-center">
           Contact Me
         </h2>
         <p className="contact-text mb-8 lg:mb-16 font-bold text-center sm:text-xl">
-          Want to send feedback about a this awesome Portfolio?
-          Want pass me in interview? Just let me know. :)
+          Want to leave a feedback about this awesome Portfolio?
+          Want to pass me in interview? Please let me know. :)
         </p>
         <form ref={form} onSubmit={sendEmail} action="#" className="space-y-8">
           <div>

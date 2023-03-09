@@ -1,13 +1,16 @@
+@import "./LightDarkMode.scss";
+
 .project-card {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	margin-top: 250px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin-top: 250px;
 }
 
-.project-title {
-	font-family: "Spy";
-	// color: #071D88;
+.projects-title {
+	letter-spacing: 2px;
+//   font-family: "Spy";
+//   color: #071D88;
 }
 
 /* .title {
@@ -15,5 +18,50 @@
 	border-top: 4px solid #FFFBDC;
 } */
 
+.light {
+  .project-tabs-page {
+    background-color: map-get($light-mode, --bg-project-section-color);
+    border-top: 4px solid map-get($light-mode, --contact-container-border-color);
+  }
+  .projects-title {
+	@media only screen and (min-width: 1024px) {
+		-webkit-text-stroke: 3px map-get($light-mode, --project-stroke-text-color);   
+	  }
+    color: map-get($light-mode, --project-title-color);
+  }
+  .project-intro {
+    color: map-get($light-mode, --project-intro-color);
+  }
+}
 
+.dark {
+  .project-tabs-page {
+    background-color: map-get($dark-mode, --bg-project-section-color);
+    border-top: 4px solid map-get($dark-mode, --contact-container-border-color);
+  }
+  .projects-title {
+	@media only screen and (min-width: 1024px) {
+		-webkit-text-stroke: 3px map-get($dark-mode, --project-stroke-text-color);   
+	  }
+    color: map-get($dark-mode, --project-title-color);
+  }
+  .project-intro {
+    color: map-get($dark-mode, --project-intro-color);
+  }
+}
 
+.CSM {
+  .project-tabs-page {
+    background-color: map-get($CSM-mode, --bg-project-section-color);
+    border-top: 4px solid map-get($CSM-mode, --contact-container-border-color);
+  }
+  .projects-title {
+	@media only screen and (min-width: 1024px) {
+		-webkit-text-stroke: 3px map-get($CSM-mode, --project-stroke-text-color);   
+	  }
+    color: map-get($CSM-mode, --project-title-color);
+  }
+  .project-intro {
+    color: map-get($CSM-mode, --project-intro-color);
+  }
+}

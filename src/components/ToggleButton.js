@@ -23,15 +23,17 @@ function ToggleButton () {
     //     themeButton.textContent = "Thème ChainSaw Man";
     // }
     // });
-
+    const handleClick = ( theme ) => {
+        setTheme(theme);
+    }
 
     return (
         <div class="theme-container shadow-dark">
-            <button type="button" class="theme-button light-button" alt="Light Mode">
+            <button type="button" onCLick={() => handleClick('light')} class="theme-button light-button" alt="Light Mode">
             </button>
-            <button type="button" class="theme-button dark-button" alt="Dark Mode">
+            <button type="button" onCLick={() => handleClick('dark')} class="theme-button dark-button" alt="Dark Mode">
             </button>
-            <button type="button" class="theme-button CSM-button" alt="ChainSawMan Mode">
+            <button type="button" onCLick={() => handleClick('CSM')} class="theme-button CSM-button" alt="ChainSawMan Mode">
             </button>
         </div>
     );
