@@ -25,6 +25,9 @@ textarea:focus {
   }
 
   .title {
+    @media only screen and (min-width: 1024px) {
+      -webkit-text-stroke: 3px map-get($light-mode, --contact-stroke-text-color);   
+      }
     color: map-get($light-mode, --contact-text-color);
   }
 
@@ -64,6 +67,9 @@ textarea:focus {
   }
 
   .title {
+    @media only screen and (min-width: 1024px) {
+      -webkit-text-stroke: 3px map-get($dark-mode, --contact-stroke-text-color);   
+      }
     color: map-get($dark-mode, --contact-text-color);
   }
 
@@ -103,6 +109,9 @@ textarea:focus {
   }
 
   .title {
+    @media only screen and (min-width: 1024px) {
+      -webkit-text-stroke: 3px map-get($CSM-mode, --contact-stroke-text-color);   
+      }
     color: map-get($CSM-mode, --contact-text-color);
   }
 

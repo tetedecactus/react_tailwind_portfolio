@@ -10,10 +10,13 @@ function CvButton() {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY >= 700) {
-        setScrolled(false);
-      } else {
+
+      // var distanceToBottom = document.body.offsetHeight - (window.innerHeight + window.scrollY);
+
+      if (window.scrollY <= 700 || window.scrollY >= 2300) {
         setScrolled(true);
+      } else {
+        setScrolled(false);
       }
     };
 

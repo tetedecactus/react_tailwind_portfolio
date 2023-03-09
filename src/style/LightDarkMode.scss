@@ -27,6 +27,7 @@ $dark-mode: (
   --img-border-color: #283035,
   --name-text-color: #fff,
   --text-color: #c72931,
+  --stroke-text-color: #283035,
   --description-text-color: #fff,
   --connect-button-bg-color: #283035,
   --connect-button-text-color: #fff,
@@ -38,7 +39,7 @@ $dark-mode: (
   --bg-project-section-color: #354249,
   --project-title-color: #c72931,
   --project-intro-color: #fff,
- 
+  --project-stroke-text-color: #283035,
 
   //  CV BUTTON
   --bg-cv-button-color: #283035,
@@ -60,6 +61,7 @@ $dark-mode: (
   --contact-input-bg-color: #303a40,
   --contact-input-text-color: #fff,
   --contact-input-border-color: #fff,
+  --contact-stroke-text-color: #c72931,
   //FOOTER
   --bg-footer-color: #303a40,
   --footer-info-color: #c72931,
@@ -98,6 +100,7 @@ $light-mode: (
   --img-border-color: #fff,
   --name-text-color: #fff,
   --text-color: #020001,
+  --stroke-text-color: #adacaa,
   --description-text-color: #fff,
   --connect-button-bg-color: #adacaa,
   --connect-button-text-color: #fff,
@@ -109,7 +112,7 @@ $light-mode: (
   --bg-project-section-color: #fff,
   --project-title-color: #dec79e,
   --project-intro-color: #adacaa,
-
+  --project-stroke-text-color: #020001,
   //  CV BUTTON
   --bg-cv-button-color: #adacaa,
   --cv-button-text-color: #fff,
@@ -123,12 +126,13 @@ $light-mode: (
   // CONTACT FORM
   --bg-contact-color: #adacaa,
   --contact-container-border-color: #020001,
-  --contact-text-color: #020001,
+  --contact-text-color: #fff,
   --paragraph-contact-color: #020001,
   --contact-label-color: #fff,
   --contact-input-bg-color: #dec79e,
   --contact-input-text-color: #020001,
   --contact-input-border-color: #020001,
+  --contact-stroke-text-color: #dec79e,
 
   //FOOTER
   --bg-footer-color: #dec79e,
@@ -136,7 +140,6 @@ $light-mode: (
   --footer-about-color: #fff,
   --footer-text-color: #020001,
   --footer-copyright-color: #adacaa,
-
 );
 
 $CSM-mode: (
@@ -168,6 +171,7 @@ $CSM-mode: (
   --img-border-color: #64bd49,
   --name-text-color: #64bd49,
   --text-color: #fe5455,
+  --stroke-text-color: #000,
   --description-text-color: #ffff0b,
   --connect-button-bg-color: #64bd49,
   --connect-button-text-color: #586bb8,
@@ -179,7 +183,7 @@ $CSM-mode: (
   --bg-project-section-color: #fe5455,
   --project-title-color: #586bb8,
   --project-intro-color: #ffff0b,
-
+  --project-stroke-text-color: #000,
 
   // --connect-button-bg-color
   //  CV BUTTON
@@ -201,6 +205,7 @@ $CSM-mode: (
   --contact-input-bg-color: #586bb8,
   --contact-input-text-color: #ffff0b,
   --contact-input-border-color: #ffff0b,
+  --contact-stroke-text-color: #000,
 
   //FOOTER
   --bg-footer-color: #586bb8,

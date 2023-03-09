@@ -49,7 +49,7 @@ function ContactForm() {
   return (
     <section id="contact" className="contact-container h-full overflow-x-hidden">
       <div className="py-8 lg:py-16 px-16 mx-auto max-w-screen-md relative h-full mt-20">
-        <h2 className="title mb-8 text-4xl tracking-tight font-extrabold text-center">
+        <h2 className="title mb-8 text-6xl tracking-tight font-extrabold text-center">
           Contact Me
         </h2>
         <p className="contact-text mb-8 lg:mb-16 font-bold text-center sm:text-xl">

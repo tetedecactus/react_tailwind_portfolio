@@ -30,7 +30,10 @@
   }
 
   .quote {
-    color: map-get($light-mode, --text-color);
+    @media only screen and (min-width: 1024px) {
+      -webkit-text-stroke: 3px map-get($light-mode, --stroke-text-color);   
+    }
+     color: map-get($light-mode, --text-color);
   }
 
   .intro {
@@ -82,6 +85,9 @@
   }
 
   .quote {
+    @media only screen and (min-width: 1024px) {
+      -webkit-text-stroke: 3px map-get($dark-mode, --stroke-text-color);   
+    }
     color: map-get($dark-mode, --text-color);
   }
 
@@ -134,6 +140,9 @@
   }
 
   .quote {
+    @media only screen and (min-width: 1024px) {
+      -webkit-text-stroke: 3px map-get($CSM-mode, --stroke-text-color);   
+    }
     color: map-get($CSM-mode, --text-color);
   }
 
