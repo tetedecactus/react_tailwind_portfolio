@@ -62,3 +62,13 @@
         color: map-get($CSM-mode, --footer-copyright-color);
     }
 }
+
+
+
+.click-it:hover {
+    color:rgb(31, 19, 196);
+    cursor: pointer;
+    // transform: scale(10%);
+    transform: rotate(180deg);
+    transition: transform 05s ease-in-out;
+}

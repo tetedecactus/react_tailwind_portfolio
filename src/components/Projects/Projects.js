@@ -9,28 +9,49 @@ import ProjectPage from "./42Projects/ProjectPage"
 
 export default function ProjectTabs() {
 	return (
-		<section id="projects" className="project-tabs-page w-full mt-12">
-			<Tabs className='justify-center'>
-				<TabList className='flex items-center justify-center'>
-					<Tab className='text-[#6B7891] px-3 py-2'>Projects 42</Tab>
-					<Tab className='text-[#6B7891] px-3 py-2'>Personnal Projects</Tab>
-					<Tab className='text-[#6B7891] px-3 py-2'>Free Lance Projects</Tab>
-				</TabList>
-				<TabPanel className='items-center justify-center'>
-					<h2 className="text-[#fff] text-center">Projects 42</h2>
-					{/* mettre logode 42 et expliquer ce que c'est */}
-					<ProjectPage />
-				</TabPanel>
-				<TabPanel>
-					<h2 className="text-[#fff] text-center">Personnal Projects</h2>
-					{/* Expliquer mon interet full stack et entrepreneur  */}
-				</TabPanel>
-				<TabPanel>
-					<h2 className="text-[#fff] text-center">Free Lance Projects</h2>
-					<img src={eastclaw} />
-					{/* Montrer mes projet */}
-				</TabPanel>
-			</Tabs>
-		</section>
+		// <section id="projects" className="project-tabs-page bg-white w-full mt-12">
+		// 	<Tabs className='justify-center'>
+		// 		<TabList className='flex items-center justify-center'>
+		// 			<Tab className='text-[#6B7891] px-3 py-2'>Projects 42</Tab>
+		// 			<Tab className='text-[#6B7891] px-3 py-2'>Personnal Projects</Tab>
+		// 			<Tab className='text-[#6B7891] px-3 py-2'>Free Lance Projects</Tab>
+		// 		</TabList>
+		// 		<TabPanel className='items-center justify-center'>
+		// 			<h2 className="text-[#fff] text-center">Projects 42</h2>
+		// 			{/* mettre logode 42 et expliquer ce que c'est */}
+		// 			<ProjectPage />
+		// 		</TabPanel>
+		// 		<TabPanel>
+		// 			<h2 className="text-[#fff] text-center">Personnal Projects</h2>
+		// 			{/* Expliquer mon interet full stack et entrepreneur  */}
+		// 		</TabPanel>
+		// 		<TabPanel>
+		// 			<h2 className="text-[#fff] text-center">Free Lance Projects</h2>
+		// 			<img src={eastclaw} />
+		// 			{/* Montrer mes projet */}
+		// 		</TabPanel>
+		// 	</Tabs>
+		// </section>
+		<section id="projects" className="project-tabs-page  h-screen mt-12">
+			<div className="container">
+				<h2 className="projects-title my-20 text-6xl font-extrabold text-center">My Projects</h2>
+				<p className="project-intro  text-center">Currently, I am working on developing a mobile app using 
+					React Native and integrating it with Firebase. Additionally, 
+					I am studying algorithms and data structures to improve my problem-solving skills. </p>
+			</div>
+		<Tabs className='justify-center'>
+			<TabList className='flex items-center justify-center'>
+				<Tab className='text-[#6B7891] px-3 py-2'>Projects 42</Tab>
+				<Tab className='text-[#6B7891] px-3 py-2'>Personnal Projects</Tab>
+				<Tab className='text-[#6B7891] px-3 py-2'>Free Lance Projects</Tab>
+			</TabList>
+			<TabPanel className='items-center justify-center'>
+			</TabPanel>
+			<TabPanel>
+			</TabPanel>
+			<TabPanel>
+			</TabPanel>
+		</Tabs>
+	</section>
 	);
 }

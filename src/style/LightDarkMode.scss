@@ -15,7 +15,7 @@ $dark-mode: (
   --navbar-mobile-button-color-hover: #fff,
   --navbar-mobile-border-color: #c72931,
 
-  --navbar-mobile-link-bg-color-hover: #303a40,
+  --navbar-mobile-link-bg-color-hover: #283035,
   --navbar-mobile-link-color: #c72931,
   --navbar-mobile-link-color-hover: #fff,
 
@@ -33,6 +33,12 @@ $dark-mode: (
   --connect-button-border-color: #c72931,
   --bg-connect-button-color-hover: #303a40,
   --connect-button-text-color-hover: #c72931,
+
+  //PROJECT
+  --bg-project-section-color: #354249,
+  --project-title-color: #c72931,
+  --project-intro-color: #fff,
+ 
 
   //  CV BUTTON
   --bg-cv-button-color: #283035,
@@ -80,9 +86,9 @@ $light-mode: (
   --navbar-mobile-button-color-hover: #fff,
   --navbar-mobile-border-color: #fff,
 
-  --navbar-mobile-link-bg-color-hover: #020001,
-  --navbar-mobile-link-color: #dec79e,
-  --navbar-mobile-link-color-hover: #fff,
+  --navbar-mobile-link-bg-color-hover: #adacaa,
+  --navbar-mobile-link-color: #fff,
+  --navbar-mobile-link-color-hover: #020001,
 
   //  ABOUT
   --welcom-button-color-1: #adacaa,
@@ -98,6 +104,11 @@ $light-mode: (
   --connect-button-border-color: #020001,
   --bg-connect-button-color-hover: #dec79e,
   --connect-button-text-color-hover: #020001,
+
+  //PROJECT
+  --bg-project-section-color: #fff,
+  --project-title-color: #dec79e,
+  --project-intro-color: #adacaa,
 
   //  CV BUTTON
   --bg-cv-button-color: #adacaa,
@@ -163,6 +174,13 @@ $CSM-mode: (
   --connect-button-border-color: #ffff0b,
   --bg-connect-button-color-hover: #586bb8,
   --connect-button-text-color-hover: #64bd49,
+
+  //PROJECT
+  --bg-project-section-color: #fe5455,
+  --project-title-color: #586bb8,
+  --project-intro-color: #ffff0b,
+
+
   // --connect-button-bg-color
   //  CV BUTTON
   --bg-cv-button-color: #64bd49,
