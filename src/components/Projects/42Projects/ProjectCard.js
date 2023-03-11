@@ -1,9 +1,16 @@
 import images from "../../../module/Images"
 import { useContext } from "react";
 import { ThemeContext } from "../../../context/ThemeContext.js";
+import Carousel from "../Carousel";
 
 function ProjectCard({ title, imgUrl, description, language, lien }) {
 	const { theme } = useContext(ThemeContext);
+
+	const slides = [
+		"images.fdf-1.png",
+		"images.transcendence.PNG",
+		"images.transcendence.gif",
+	]
 
   return (
     <diV className="flex justify-center">
@@ -13,12 +20,19 @@ function ProjectCard({ title, imgUrl, description, language, lien }) {
         </div>
         <div className="flex">
           <div>
-            <img
-              className=""
-              src={imgUrl}
-              width={950}
-              alt="project icons"
-            />
+            <div className="max-w-lg">
+				<Carousel>
+					{[
+						...slides.map((s, index) => {
+							return (
+								key={index}
+								{...s})
+								
+							)
+						})
+					]}
+				</Carousel>
+			</div>
           </div>
           <div className="w-96 rounded-md h-auto lg:absolute left-1/2 mt-12 ml-12 ">
             {/* <p className=" text-justify">{description}</p> */}

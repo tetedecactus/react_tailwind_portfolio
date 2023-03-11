@@ -1,6 +1,7 @@
 import projects from "./ProjectObj";
 import ProjectCard from "./ProjectCard";
 import images from "../../../module/Images"
+
 function ProjectPage() {
 	return (
 		<section>
