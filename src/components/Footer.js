@@ -5,7 +5,7 @@ function Footer() {
   return (
     <section className="footer-container flex container min-w-full h-full">
       <div className="flex flex-row flex-wrap text-center items-center justify-center relative  my-4">
-        <div className="footer-info lg:w-1/2 justify-center items-center text-center">
+        <div className="footer-info lg:w-1/2 justify-center text-opacity-75 items-center text-center">
           <h3 className="pb-4 font-bold">
             <span>Olivier Labrecque Lacasse</span>
           </h3>
@@ -13,14 +13,14 @@ function Footer() {
             <span>Quebec, Quebec</span>
           </p>
           <p className="pt-4 font-bold">
-            <span>o.labrecque.lacasse@gmail.com</span>
+            <a  href="mailto:o.labrecque.lacassse@gmail.com">o.labrecque.lacasse@gmail.com</a>
           </p>
         </div>
-        <div className="lg:w-1/2  justify-center items-center text-center pt-8 px-10">
-          <h3 className="footer-about font-bold pb-4">
+        <div className="lg:w-1/2  justify-center items-center  pt-8 px-10">
+          <h3 className="footer-about text-jsutify font-bold pb-4">
             <span>About Me</span>
           </h3>
-          <p className="footer-text text-justify font-light  pt-4">
+          <p className="footer-text text-justify font-light px-20 pt-4">
             Je suis sur le point de terminer ma formation en architecture de
             l’information numérique offerte par 42 Québec et je suis par le fait
             même à la recherche d’un stage qui me permettrait de perfectionner

@@ -1,37 +1,21 @@
-import { ArrowRightCircle } from "react-bootstrap-icons";
-import "../../style/Project.scss";
-import fdf from "../../assets/img/fdf.PNG";
-import transcendence from "../../assets/img/transcendence.PNG";
-import eastclaw from "../../assets/img/eastclaw.PNG";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { useState, useEffect } from "react";
+import "../../style/Project.scss";
 import "react-tabs/style/react-tabs.css";
 import ProjectPage from "./42Projects/ProjectPage";
-import images from "../../module/Images"
+
 export default function ProjectTabs() {
+  const [angle, setAngle] = useState(0);
+
+  useEffect(() => {
+        const interval = setInterval(() => {
+          setAngle(angle => angle + 1);
+        }, 10);
+    
+        return () => clearInterval(interval);
+      }, []);
   return (
-    // <section id="projects" className="project-tabs-page bg-white w-full mt-12">
-    // 	<Tabs className='justify-center'>
-    // 		<TabList className='flex items-center justify-center'>
-    // 			<Tab className='text-[#6B7891] px-3 py-2'>Projects 42</Tab>
-    // 			<Tab className='text-[#6B7891] px-3 py-2'>Personnal Projects</Tab>
-    // 			<Tab className='text-[#6B7891] px-3 py-2'>Free Lance Projects</Tab>
-    // 		</TabList>
-    // 		<TabPanel className='items-center justify-center'>
-    // 			<h2 className="text-[#fff] text-center">Projects 42</h2>
-    // 			{/* mettre logode 42 et expliquer ce que c'est */}
-    // 			<ProjectPage />
-    // 		</TabPanel>
-    // 		<TabPanel>
-    // 			<h2 className="text-[#fff] text-center">Personnal Projects</h2>
-    // 			{/* Expliquer mon interet full stack et entrepreneur  */}
-    // 		</TabPanel>
-    // 		<TabPanel>
-    // 			<h2 className="text-[#fff] text-center">Free Lance Projects</h2>
-    // 			<img src={eastclaw} />
-    // 			{/* Montrer mes projet */}
-    // 		</TabPanel>
-    // 	</Tabs>
-    // </section>
+  
     <section id="projects" className="project-tabs-page h-full overflow-x-hidden mt-12">
       <div className="container py-8 lg:py-16 px-16 mx-auto max-w-screen-lg relative h-full">
         <h2 className="projects-title my-20 text-6xl font-extrabold text-center">
@@ -42,21 +26,56 @@ export default function ProjectTabs() {
           and integrating it with Firebase. Additionally, I am studying
           algorithms and data structures to improve my problem-solving skills.{" "}
         </p>
-      <Tabs className="justify-center">
+      <Tabs className="justify-center py-12">
         <TabList className="flex items-center justify-center">
-          <Tab className="text-[#6B7891] px-3 py-2">Projects 42</Tab>
-          <Tab className="text-[#6B7891] px-3 py-2">Personnal Projects</Tab>
-          <Tab className="text-[#6B7891] px-3 py-2">Free Lance Projects</Tab>
+          <Tab className=" px-3 py-2">Projects 42</Tab>
+          <Tab className=" px-3 py-2">Personnal Projects</Tab>
+          <Tab className=" px-3 py-2">Free Lance Projects</Tab>
         </TabList>
-        <TabPanel className="items-center justify-center">
-			<img src={images.fdf} width={400} height={300}></img>
-			<img src={images.transcendence} width={400} height={300}></img>
-			<img src={images.transcendence_gif} width={400} height={300}></img>
-		</TabPanel>
+        <TabPanel className="flex items-center justify-center">
+          <p className="projects-text items-center text-justify px-20 py-12">Les projet fait a  42 Quebec sont des projets est développée par une équipe
+          pédagogique qualifiée, de sorte à permettre une courbe d'apprentissage en 
+          progression constante. Certains projets sont obligatoires alors que d'autres 
+          sont au choix, selon les ambitions et intérêts de chacun(e). Certains sont 
+          communs à tous les campus du Réseau 42 alors qu'il est possible de retrouver 
+          des projets qui correspondent à la réalité du marché du travail local.
+          Compétences développées : Autonomie, organisation, pensée critique.
+          </p>
+          <ProjectPage />
+        </TabPanel>
         <TabPanel></TabPanel>
         <TabPanel></TabPanel>
       </Tabs>
       </div>
     </section>
   );
+
+
+//   return (
+//     <div
+//       style={{
+//         width: "200px",
+//         height: "200px",
+//         backgroundColor: "red",
+//         transform: `rotate3d(1, 1, 1, ${angle}deg)`
+//       }}
+//     ></div>
+//   );
+// }
+
+// Dans cet exemple, la div est créée avec une largeur 
+// et une hauteur de 200px, ainsi qu'une couleur de fond 
+// rouge. La propriété transform est utilisée pour 
+// appliquer la rotation sur la div, en utilisant la 
+// fonction rotate3d() pour spécifier l'axe de rotation et l'angle de rotation.
+
+// La variable angle est initialisée à 0 en utilisant le 
+// hook useState(), puis la méthode useEffect() est utilisée pour 
+// mettre en place une boucle d'animation avec setInterval().
+//  À chaque itération de la boucle, l'angle est mis à jour avec 
+//  la fonction setAngle(), ce qui déclenche une mise à jour de l'interface 
+//  utilisateur avec la nouvelle rotation appliquée à la div.
+
+// Vous pouvez ajuster les propriétés CSS et les valeurs de la boucle 
+// d'animation selon vos besoins pour obtenir l'apparence et le comportement souhaités.
 }

@@ -8,15 +8,51 @@
 }
 
 .projects-title {
-	letter-spacing: 2px;
-//   font-family: "Spy";
-//   color: #071D88;
+  letter-spacing: 2px;
 }
 
-/* .title {
-	border-bottom: 4px solid #FFFBDC;
-	border-top: 4px solid #FFFBDC;
-} */
+// .cube {
+//   position: relative;
+//   width: 350px;
+//   height: 350px;
+//   transform-style: preserve-3d;
+// }
+
+// .cube div {
+//   position: absolute;
+//   top: 0%;
+//   left: 0%;
+//   width: 100%;
+//   height: 100%;
+//   transform-style: preserve-3d;
+//   transform: rotateX(-30deg);
+//   animation: cubeRotate 40s linear infinite;
+// }
+
+@keyframes cubeRotate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+
+// .cube div span {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   // background: #5f5757;
+//   // background-image: url("../assets/img/fdf-1.png");
+//   // background-repeat: no-repeat;
+//   // background-position: center;
+//   // background-size: cover;
+//   // transform: `rotate3d(1, 1, 1, ${180}deg)`;
+//   // transform: rotateY(calc(90deg * var(--i))translateZ(150px));
+// }
 
 .light {
   .project-tabs-page {
@@ -24,9 +60,9 @@
     border-top: 4px solid map-get($light-mode, --contact-container-border-color);
   }
   .projects-title {
-	@media only screen and (min-width: 1024px) {
-		-webkit-text-stroke: 3px map-get($light-mode, --project-stroke-text-color);   
-	  }
+    @media only screen and (min-width: 1024px) {
+      -webkit-text-stroke: 3px map-get($light-mode, --project-stroke-text-color);
+    }
     color: map-get($light-mode, --project-title-color);
   }
   .project-intro {
@@ -40,9 +76,9 @@
     border-top: 4px solid map-get($dark-mode, --contact-container-border-color);
   }
   .projects-title {
-	@media only screen and (min-width: 1024px) {
-		-webkit-text-stroke: 3px map-get($dark-mode, --project-stroke-text-color);   
-	  }
+    @media only screen and (min-width: 1024px) {
+      -webkit-text-stroke: 3px map-get($dark-mode, --project-stroke-text-color);
+    }
     color: map-get($dark-mode, --project-title-color);
   }
   .project-intro {
@@ -56,9 +92,9 @@
     border-top: 4px solid map-get($CSM-mode, --contact-container-border-color);
   }
   .projects-title {
-	@media only screen and (min-width: 1024px) {
-		-webkit-text-stroke: 3px map-get($CSM-mode, --project-stroke-text-color);   
-	  }
+    @media only screen and (min-width: 1024px) {
+      -webkit-text-stroke: 3px map-get($CSM-mode, --project-stroke-text-color);
+    }
     color: map-get($CSM-mode, --project-title-color);
   }
   .project-intro {
