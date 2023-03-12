@@ -41,7 +41,7 @@ import bg_component_CSM_line from "../assets/img/bg_component_CSM_line.svg";
 import bg_component_CSM_polygon from "../assets/img/bg_component_CSM_polygon.svg";
 import bg_component_CSM_gy from "../assets/img/bg_component_CSM_gy.svg";
 
-import fdf from "../assets/img/fdf-1.png";
+import fdf from "../assets/img/fdf.png";
 import transcendence from "../assets/img/transcendence.PNG";
 import transcendence_gif from "../assets/img/transcendence.gif";
 

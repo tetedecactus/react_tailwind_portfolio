@@ -13,7 +13,7 @@ function CvButton() {
 
       // var distanceToBottom = document.body.offsetHeight - (window.innerHeight + window.scrollY);
 
-      if (window.scrollY <= 700 || window.scrollY >= 2300) {
+      if (window.scrollY <= 700) {
         setScrolled(true);
       } else {
         setScrolled(false);
