@@ -54,7 +54,7 @@ function About() {
     <section className={`${style.container} ${style[theme]}`}>
       <div
         id="about"
-        className="about-page container flex justify-center lg:relative mb-20 py-8 m-auto px-10 md:px-12 xl:px-6 h-full overflow-x-hidden"
+        className="about-page container justify-center lg:relative mb-20 py-8 m-auto px-10 md:px-12 xl:px-6 h-full overflow-x-hidden"
       >
         <div className="flex flex-row flex-wrap sm:flex-wrap justify-center sm:ml-12 lg:ml-20 relative h-full">
           <img

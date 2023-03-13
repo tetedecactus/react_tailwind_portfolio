@@ -19,7 +19,7 @@ function NavBar() {
   const { theme } = useContext(ThemeContext);
   return (
     <>
-      <section className=" relative">
+      <section className="min-h-full relative">
         <Disclosure as="nav" className={`${style.nav} ${style[theme]}`}>
           {({ open }) => {
             return (

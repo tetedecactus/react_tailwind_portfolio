@@ -16,7 +16,7 @@ function ProjectCard({ title, imgUrl, description, language, lien }) {
           <img src={imgUrl} />
         </div>
         <div className="rounded-md h-auto absolute  mt-12 ml-12 ">
-          <p className="project-description font-bold  text-justify p-6">
+          <p className="project-description font-bold text-justify p-6">
             {description}
           </p>
         </div>
