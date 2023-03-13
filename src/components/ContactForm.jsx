@@ -1,28 +1,15 @@
 import style from "../style/ContactForm.scss";
-import emailjs from '@emailjs/browser'
+import emailjs from "@emailjs/browser";
 import { useContext, useRef } from "react";
 import { ThemeContext } from "../context/ThemeContext.js";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ContactForm() {
   const { theme } = useContext(ThemeContext);
 
   const notify = () => {
-    toast.success('Message Send!', {
-    position: "top-center",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "dark",
-    });
-  };
-
-  const errorNotify = () => {
-    toast.error('Error Message Not Send', {
+    toast.success("Message Send!", {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: false,
@@ -31,30 +18,55 @@ function ContactForm() {
       draggable: true,
       progress: undefined,
       theme: "dark",
-      });
-  }
+    });
+  };
+
+  const errorNotify = () => {
+    toast.error("Error Message Not Send", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  };
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_ID)
-      .then((result) => {
-        notify();
-      }, (error) => {
-        errorNotify();
-      });
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAILJS_ID
+      )
+      .then(
+        (result) => {
+          notify();
+        },
+        (error) => {
+          errorNotify();
+        }
+      );
   };
 
   return (
-    <section id="contact" className="contact-container h-full overflow-x-hidden">
+    <section
+      id="contact"
+      className="contact-container h-full overflow-x-hidden"
+    >
       <div className="py-8 lg:py-16 px-16 mx-auto max-w-screen-md relative h-full mt-20">
         <h2 className="title mb-8 text-6xl tracking-tight font-extrabold text-center">
           Contact Me
         </h2>
         <p className="contact-text mb-8 lg:mb-16 font-bold text-center sm:text-xl">
-          Want to leave a feedback about this awesome Portfolio?
-          Want to pass me in interview? Please let me know. :)
+          Want to leave a feedback about this awesome Portfolio? Want to pass me
+          in interview? Please let me know. :)
         </p>
         <form ref={form} onSubmit={sendEmail} action="#" className="space-y-8">
           <div>

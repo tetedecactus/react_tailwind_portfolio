@@ -1,0 +1,46 @@
+@import "../LightDarkMode.scss";
+
+.light {
+    .project-title {
+        color: map-get($light-mode, --projectCard-title-color);
+        -webkit-text-stroke: 1px map-get($light-mode, --projectCard-title-stroke-color);
+    }
+    .project-description {
+        border: 2px solid map-get($light-mode, --projectCard-description-border-color);
+        background-color: map-get($light-mode, --projectCard-description-bg-color);
+        color: map-get($light-mode, --projectCard-description-color);
+    }
+    .project-techno {
+        color: map-get($light-mode, --projectCard-techno-color);
+    }
+}
+
+.dark {
+    .project-title {
+        color: map-get($dark-mode, --projectCard-title-color);
+        -webkit-text-stroke: 1px map-get($dark-mode, --projectCard-title-stroke-color);
+    }
+    .project-description {
+        border: 2px solid map-get($dark-mode, --projectCard-description-border-color);
+        background-color: map-get($dark-mode, --projectCard-description-bg-color);
+        color: map-get($dark-mode, --projectCard-description-color);
+    }
+    .project-techno {
+        color: map-get($dark-mode, --projectCard-techno-color);
+    }
+}
+
+.CSM {
+    .project-title {
+        color: map-get($CSM-mode, --projectCard-title-color);
+        -webkit-text-stroke: 1px map-get($CSM-mode, --projectCard-title-stroke-color);
+    }
+    .project-description {
+        border: 2px solid map-get($CSM-mode, --projectCard-description-border-color);
+        background-color: map-get($CSM-mode, --projectCard-description-bg-color);
+        color: map-get($CSM-mode, --projectCard-description-color);
+    }
+    .project-techno {
+        color: map-get($CSM-mode, --projectCard-techno-color);
+    }
+}

@@ -9,6 +9,7 @@
 
 .projects-title {
   letter-spacing: 2px;
+  transition: 0.3ms ease-in-out;
 }
 
 // .cube {
@@ -68,6 +69,19 @@
   .project-intro {
     color: map-get($light-mode, --project-intro-color);
   }
+  .onglet-project {
+    color: map-get($light-mode, --onglet-projects-color);
+    // border-bottom: 3px solid map-get($light-mode, --onglet-projects-bg-color);
+    background-color: transparent;
+  }
+  .onglet-project:hover {
+    color: map-get($light-mode, --onglet-projects-color);
+    border-bottom: 3px solid map-get($light-mode, --onglet-projects-bg-color);
+    transition: transform 0.4s ease-in-out;
+  }
+  .projects-text {
+    color: map-get($light-mode, --projects-type-text-color);
+  }
 }
 
 .dark {
@@ -84,6 +98,20 @@
   .project-intro {
     color: map-get($dark-mode, --project-intro-color);
   }
+  .onglet-project {
+    color: map-get($dark-mode, --onglet-projects-color);
+    // background-color: map-get($dark-mode, --onglet-projects-bg-color);
+    background-color: transparent;
+  }
+  .onglet-project:hover {
+    color: map-get($dark-mode, --onglet-projects-color);
+    border-bottom: 3px solid map-get($dark-mode, --onglet-projects-bg-color);
+    
+    transition: transform 0.4s ease-in-out;
+  }
+  .projects-text {
+    color: map-get($dark-mode, --projects-type-text-color);
+  }
 }
 
 .CSM {
@@ -99,5 +127,18 @@
   }
   .project-intro {
     color: map-get($CSM-mode, --project-intro-color);
+  }
+  .onglet-project {
+    color: map-get($CSM-mode, --onglet-projects-color);
+    // background-color: map-get($CSM-mode, --onglet-projects-bg-color);
+    background-color: transparent;
+  }
+  .onglet-project:hover {
+    color: map-get($CSM-mode, --onglet-projects-color);
+    border-bottom: 3px solid map-get($CSM-mode, --onglet-projects-bg-color);
+    transition: transform 0.4s ease-in-out;
+  }
+  .projects-text {
+    color: map-get($CSM-mode, --projects-type-text-color);
   }
 }

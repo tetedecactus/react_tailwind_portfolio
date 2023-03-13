@@ -1,0 +1,33 @@
+{
+    "About": "About",
+    "Projects": "Projects",
+    "Contact": "Contact",
+
+    "welcome_message": "Welcome to my Portfolio",
+    "script_message_1": "Hi I'm a Programming Student / Web Developer",
+    "script_message_2": "Hi I'm a Programming Student / Web Designer",
+    "about_text": "Hello and welcome! My name is Olivier Labrecque-Lacasse, and I am a front-end web development intern. I am excited to be part of this team and have the opportunity to work on challenging projects that will allow me to develop my skills and gain real-world experience in the field. My background in 42 Quebec has provided me with a strong foundation in HTML, CSS, JavaScript, React, Wordpress and other web development technologies. I am eager to learn from experienced professionals and contribute my knowledge and creativity to the team. I am confident that this internship will not only help me grow as a developer but also make a valuable contribution to the organization. Thank you for the opportunity, and I look forward to working with you.",
+    "connect_button": "Let's Connect",
+    "download_button": "DOWNLOAD C.V",
+    
+    "projects_title": "My Projects",
+    "current_project": "Currently, I am working on developing a mobile app using React Native and integrating it with Firebase. Additionally, I am studying algorithms and data structures to improve my problem-solving skills.",
+    "project_42": "Projects 42",
+    "personnal_projects": "Personnal Projects",
+    "project_42_description": "The projects done at 42 Quebec are developed by a qualified pedagogical team, in order to allow a constant learning curve. Some projects are mandatory while others are optional, depending on the ambitions and interests of each student. Some are common to all Réseau 42 campuses while it is possible to find projects that correspond to the reality of the local job market. Skills developed : Autonomy, organization, critical thinking.",
+
+    "fdf_description": "The representation of terrain in relief is a key practice in modern cartography. For example, in this era of space exploration, having a three-dimensional reproduction of the surface of Mars is an indispensable prerequisite for the conquest of this planet. Another example, comparing three-dimensional representations of an area where tectonic activity is important allows us to better understand these phenomena and their evolution, and therefore to be better prepared.",
+
+    "contact_title": "Contact Me",
+    "contact_message": "Want to leave a feedback about this awesome Portfolio? Want to pass me in interview? Please let me know. :)",
+    "email_label": "Your email",
+    "subject_label": "Subject",
+    "message_label": "Your message",
+    "send_message_button": "Send message",
+
+    "footer_about": "About Me",
+    "footer_text": "I am about to finish my training in digital information architecture offered by 42 Quebec and I am looking for an internship that would allow me to perfect my learning. My various mandates have led me to take charge of large-scale projects that have allowed me to develop my web skills, my autonomy and perfect my teamwork through organizational and leadership skills."
+    
+
+    
+}

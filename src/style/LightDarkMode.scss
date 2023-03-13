@@ -1,75 +1,3 @@
-$dark-mode: (
-  --bg-color: #303a40,
-
-  //  NAVBAR
-  --bg-navbar-color: #283035,
-  --navbar-border-bottom-color: #c72931,
-  --navbar-link-color: #c72931,
-  --navbar-link-color-hover: #fff,
-  --navbar-link-bg-color-hover: #303a40,
-  --navbar-link-border-color-hover: #c72931,
-
-  --navbar-mobile-bg-button: #303a40,
-  --navbar-mobile-button-color: #c72931,
-  --navbar-mobile-bg-button-hover: #283035,
-  --navbar-mobile-button-color-hover: #fff,
-  --navbar-mobile-border-color: #c72931,
-
-  --navbar-mobile-link-bg-color-hover: #283035,
-  --navbar-mobile-link-color: #c72931,
-  --navbar-mobile-link-color-hover: #fff,
-
-  //  ABOUT
-  --welcom-button-color-1: #283035,
-  --welcom-button-color-2: #354249,
-  --welcom-button-border-color: #fff,
-  --welcom-button-text-color: #c72931,
-  --img-border-color: #283035,
-  --name-text-color: #fff,
-  --text-color: #c72931,
-  --stroke-text-color: #283035,
-  --description-text-color: #fff,
-  --connect-button-bg-color: #283035,
-  --connect-button-text-color: #fff,
-  --connect-button-border-color: #c72931,
-  --bg-connect-button-color-hover: #303a40,
-  --connect-button-text-color-hover: #c72931,
-
-  //PROJECT
-  --bg-project-section-color: #354249,
-  --project-title-color: #c72931,
-  --project-intro-color: #fff,
-  --project-stroke-text-color: #283035,
-
-  //  CV BUTTON
-  --bg-cv-button-color: #283035,
-  --cv-button-text-color: #fff,
-  --cv-button-border-color: #c72931,
-  --bg-cv-button-color-hover: #303a40,
-  --cv-button-text-color-hover: #c72931,
-
-  // SOCIAL ICONS
-  --line-color: #283035,
-  --icons-color: #c72931,
-
-  // CONTACT FORM
-  --bg-contact-color: #283035,
-  --contact-container-border-color: #c72931,
-  --contact-text-color: #fff,
-  --paragraph-contact-color: #fff,
-  --contact-label-color: #c72931,
-  --contact-input-bg-color: #303a40,
-  --contact-input-text-color: #fff,
-  --contact-input-border-color: #fff,
-  --contact-stroke-text-color: #c72931,
-  //FOOTER
-  --bg-footer-color: #303a40,
-  --footer-info-color: #fff,
-  --footer-about-color: #c72931,
-  --footer-text-color: #fff,
-  --footer-copyright-color: #c72931,
-);
-
 $light-mode: (
   --bg-color: #dec79e,
 
@@ -113,6 +41,17 @@ $light-mode: (
   --project-title-color: #dec79e,
   --project-intro-color: #020001,
   --project-stroke-text-color: #020001,
+  --onglet-projects-color: #dec79e,
+  --onglet-projects-bg-color: #adacaa,
+  --projects-type-text-color: #adacaa,
+  //--PROJECT CARD
+  --projectCard-title-color: #dec79e,
+  --projectCard-description-color: #020001,
+  --projectCard-title-stroke-color: #020001,
+  --projectCard-description-bg-color: #dec79e,
+  --projectCard-description-border-color: #020001,
+  --projectCard-techno-color: #adacaa,
+
   //  CV BUTTON
   --bg-cv-button-color: #adacaa,
   --cv-button-text-color: #fff,
@@ -140,6 +79,88 @@ $light-mode: (
   --footer-about-color: #fff,
   --footer-text-color: #020001,
   --footer-copyright-color: #adacaa,
+);
+
+$dark-mode: (
+  --bg-color: #303a40,
+
+  //  NAVBAR
+  --bg-navbar-color: #283035,
+  --navbar-border-bottom-color: #c72931,
+  --navbar-link-color: #c72931,
+  --navbar-link-color-hover: #fff,
+  --navbar-link-bg-color-hover: #303a40,
+  --navbar-link-border-color-hover: #c72931,
+
+  --navbar-mobile-bg-button: #303a40,
+  --navbar-mobile-button-color: #c72931,
+  --navbar-mobile-bg-button-hover: #283035,
+  --navbar-mobile-button-color-hover: #fff,
+  --navbar-mobile-border-color: #c72931,
+
+  --navbar-mobile-link-bg-color-hover: #283035,
+  --navbar-mobile-link-color: #c72931,
+  --navbar-mobile-link-color-hover: #fff,
+
+  //  ABOUT
+  --welcom-button-color-1: #283035,
+  --welcom-button-color-2: #354249,
+  --welcom-button-border-color: #fff,
+  --welcom-button-text-color: #c72931,
+  --img-border-color: #283035,
+  --name-text-color: #fff,
+  --text-color: #c72931,
+  --stroke-text-color: #283035,
+  --description-text-color: #fff,
+  --connect-button-bg-color: #283035,
+  --connect-button-text-color: #fff,
+  --connect-button-border-color: #c72931,
+  --bg-connect-button-color-hover: #303a40,
+  --connect-button-text-color-hover: #c72931,
+
+  //PROJECT -> PROJECTS.JSX
+  --bg-project-section-color: #354249,
+  --project-title-color: #c72931,
+  --project-intro-color: #fff,
+  --project-stroke-text-color: #283035,
+  --onglet-projects-color: #c72931,
+  --onglet-projects-bg-color: #283035,
+  --projects-type-text-color: #fff,
+  //--PROJECT CARD
+  --projectCard-title-color: #c72931,
+  --projectCard-description-color: #fff,
+  --projectCard-title-stroke-color: #283035,
+  --projectCard-description-bg-color: #283035,
+  --projectCard-description-border-color: #c72931,
+  --projectCard-techno-color: #c72931,
+
+  //  CV BUTTON
+  --bg-cv-button-color: #283035,
+  --cv-button-text-color: #fff,
+  --cv-button-border-color: #c72931,
+  --bg-cv-button-color-hover: #303a40,
+  --cv-button-text-color-hover: #c72931,
+
+  // SOCIAL ICONS
+  --line-color: #283035,
+  --icons-color: #c72931,
+
+  // CONTACT FORM
+  --bg-contact-color: #283035,
+  --contact-container-border-color: #c72931,
+  --contact-text-color: #fff,
+  --paragraph-contact-color: #fff,
+  --contact-label-color: #c72931,
+  --contact-input-bg-color: #303a40,
+  --contact-input-text-color: #fff,
+  --contact-input-border-color: #fff,
+  --contact-stroke-text-color: #c72931,
+  //FOOTER
+  --bg-footer-color: #303a40,
+  --footer-info-color: #fff,
+  --footer-about-color: #c72931,
+  --footer-text-color: #fff,
+  --footer-copyright-color: #c72931,
 );
 
 $CSM-mode: (
@@ -184,6 +205,16 @@ $CSM-mode: (
   --project-title-color: #586bb8,
   --project-intro-color: #ffff0b,
   --project-stroke-text-color: #000,
+  --onglet-projects-color: #64bd49,
+  --onglet-projects-bg-color: #586bb8,
+  --projects-type-text-color: #ffff0b,
+  //--PROJECT CARD
+  --projectCard-title-color: #586bb8,
+  --projectCard-description-color: #64bd49,
+  --projectCard-title-stroke-color: #000,
+  --projectCard-description-bg-color: #586bb8,
+  --projectCard-description-border-color: #ffff0b,
+  --projectCard-techno-color: #586bb8,
 
   // --connect-button-bg-color
   //  CV BUTTON

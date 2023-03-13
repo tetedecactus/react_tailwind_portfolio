@@ -13,7 +13,9 @@ function Footer() {
             <span>Quebec, Quebec</span>
           </p>
           <p className="pt-4 font-bold">
-            <a  href="mailto:o.labrecque.lacassse@gmail.com">o.labrecque.lacasse@gmail.com</a>
+            <a href="mailto:o.labrecque.lacassse@gmail.com">
+              o.labrecque.lacasse@gmail.com
+            </a>
           </p>
         </div>
         <div className="lg:w-1/2  justify-center items-center  pt-8 px-10">
@@ -31,7 +33,9 @@ function Footer() {
           </p>
         </div>
         <div className="w-1/1 flex pt-8 font-light">
-          <p id="copyright">Copyright 2023. <span className="click-it">My Brain</span></p>
+          <p id="copyright">
+            Copyright 2023. <span className="click-it">My Brain</span>
+          </p>
         </div>
       </div>
     </section>

@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+// import React from 'react';
+// import { useTranslation } from 'react-i18next';
+
 import images from "../module/Images";
 import style from "../style/About.scss";
 import "../style/LightDarkMode.scss";
@@ -11,6 +14,8 @@ function About() {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
+
+  // const { t } = useTranslation();
 
   const { theme } = useContext(ThemeContext);
   useEffect(() => {
@@ -123,7 +128,7 @@ function About() {
               and I look forward to working with you.
             </p>
             <div>
-              <a href={'#contact'}>
+              <a href={"#contact"}>
                 <button className="connect-button relative border font-bold rounded-md px-4 py-4 mt-6 mr-6">
                   Let's Connect
                 </button>

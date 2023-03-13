@@ -1,0 +1,33 @@
+{
+    "About": "À propos",
+    "Projects": "Projets",
+    "Contact": "Contact",
+
+    "welcome_message": "Bienvenue sur mon portfolio",
+    "script_message_1": "Bonjour, Je Suis étudiant en Programmation / Développeur Web.",
+    "script_message_2": "Bonjour, Je Suis étudiant en Programmation et Concepteur De Sites Web.",
+    "about_text": "Bonjour et bienvenue ! Je m'appelle Olivier Labrecque-Lacasse et je suis stagiaire en développement web front-end. Je suis enthousiaste à l'idée de faire partie de cette équipe et d'avoir l'opportunité de travailler sur des projets stimulants qui me permettront de développer mes compétences et d'acquérir une expérience concrète dans le domaine. Ma formation en 42 Québec m'a permis d'acquérir de solides bases en HTML, CSS, JavaScript, React, Wordpress et autres technologies de développement web. Je suis impatient d'apprendre auprès de professionnels expérimentés et d'apporter mes connaissances et ma créativité à l'équipe. Je suis convaincu que ce stage m'aidera non seulement à évoluer en tant que développeur, mais aussi à apporter une contribution précieuse à l'organisation. Je vous remercie de m'avoir offert cette opportunité et je me réjouis de travailler avec vous.",
+    "connect_button": "Connectons-nous",
+    "download_button": "TÉLÉCHARGER C.V",
+    
+    "projects_title": "Mes Projets",
+    "current_project": "Actuellement, je travaille sur le développement d'une application mobile en utilisant React Native et en l'intégrant avec Firebase. En outre, j'étudie les algorithmes et les structures de données afin d'améliorer mes compétences en matière de résolution de problèmes.",
+    "project_42": "Projets 42",
+    "personnal_projects": "Projets personnels",
+    "project_42_description": "Les projets réalisés à 42 Québec sont développés par une équipe pédagogique qualifiée, afin de permettre une courbe d'apprentissage constante. Certains projets sont obligatoires alors que d'autres sont optionnels, selon les ambitions et les intérêts de chaque étudiant. Certains sont communs à tous les campus du Réseau 42 alors qu'il est possible de trouver des projets qui correspondent à la réalité du marché du travail local. Compétences développées : autonomie, organisation, esprit critique.",
+
+    "fdf_description": "La représentation en relief d'un terrain est une pratique clef de la cartographie moderne. Par exemple, en cette ère d'exploration spatiale, avoir une reproduction en trois dimensions de la surface de Mars est un prérequis indispensable à la conquête de cette planète. Autre exemple, comparer des représentations en trois dimensions d'une zone où l'activité tectonique est importante permet de mieux comprendre ces phénomènes et leur évolution, donc d'être mieux préparé.",
+
+    "contact_title": "Contactez-moi",
+    "contact_message": "Vous voulez laisser un commentaire sur ce superbe Portfolio ? Vous voulez me faire passer un entretien ? N'hésitez pas à me contacter :)",
+    "email_label": "Votre email",
+    "subject_label": "Sujet",
+    "message_label": "Your message",
+    "send_message_button": "Envoyer le message",
+
+    "footer_about": "À mon sujet",
+    "footer_text": "Je suis sur le point de terminer ma formation en architecture de l'information numérique offerte par 42 Québec et je suis par le fait même à la recherche d'un stage qui me permettrait de perfectionner mon apprentissage. Mes différents mandats m'ont amené à prendre en charge des projets d'envergure qui m'ont permis de développer mes compétences web, mon autonomie et perfectionner mon travail d'équipe à travers des notions d'organisation et de leadership."
+    
+    
+    
+}

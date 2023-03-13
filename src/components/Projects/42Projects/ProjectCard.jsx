@@ -1,43 +1,48 @@
-import images from "../../../module/Images"
+import images from "../../../module/Images";
 import { useContext } from "react";
 import { ThemeContext } from "../../../context/ThemeContext.js";
+import "../../../style/42Projects/ProjectCard.scss"
 
 function ProjectCard({ title, imgUrl, description, language, lien }) {
-	const { theme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
-    <div className="flex justify-center">
-      <div className="mb-72">
+    <section className="container flex">
+      <div className="mb-12">
+        <div className="justify-start">
+          <h2 className="project-title text-4xl font-bold justify-start mb-6">{title}</h2>
+        </div>
+        <div className="">
+          <img src={imgUrl} />
+        </div>
+        <div className="rounded-md h-auto absolute  mt-12 ml-12 ">
+          <p className="project-description font-bold text-justify p-6">
+            {description}
+          </p>
+        </div>
         <div>
-          <h2 className=" text-4xl">{title}</h2>
+          <p className="project-techno fixed">
+            {language}
+          </p>
         </div>
         <div className="flex">
-         <img src={imgUrl}/>
-          <div className="w-96 rounded-md h-auto lg:absolute left-1/2 mt-12 ml-12 ">
-            <p className=" text-justify">{description}</p>
-          </div>
-        </div>
-        <div>
-          <p className="">{language}</p>
-        </div>
-        <div className="justify-start flex">
           <a href={lien}>
             <img
               className=" hover:translate-x-1.5"
               width={28}
               src={
-                  theme === "light"
-                    ? images.githubicons_l
-                    : theme === "dark"
-                    ? images.githubicons_d
-                    : images.githubicons_csm
-                }
+                theme === "light"
+                  ? images.githubicons_l
+                  : theme === "dark"
+                  ? images.githubicons_d
+                  : images.githubicons_csm
+              }
               alt="github"
             />
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
