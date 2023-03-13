@@ -7,7 +7,7 @@ function ProjectCard({ title, imgUrl, description, language, lien }) {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <section className="container flex">
+    <section className="container flex overflow-x-hidden">
       <div className="mb-12">
         <div className="justify-start">
           <h2 className="project-title text-4xl font-bold justify-start mb-6">{title}</h2>
