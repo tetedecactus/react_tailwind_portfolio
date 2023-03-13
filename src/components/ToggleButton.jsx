@@ -4,36 +4,15 @@ import { ThemeContext } from "../context/ThemeContext.js";
 
 function ToggleButton () {
     const { theme, setTheme } = useContext(ThemeContext);
-    // const themeButton = document.getElementById("theme-button");
-    // const body = document.body;
-
-    // themeButton.addEventListener("click", function() {
-    // // Vérifiez la classe actuelle du corps de la page et modifiez-la en conséquence
-    // if (body.classList.contains("dark")) {
-    //     body.classList.remove("dark");
-    //     body.classList.add("light");
-    //     themeButton.textContent = "Thème sombre";
-    // } else if (body.classList.contains("light")) {
-    //     body.classList.remove("light");
-    //     body.classList.add("CSM");
-    //     themeButton.textContent = "Thème lumineux";
-    // } else {
-    //     body.classList.remove("CSM");
-    //     body.classList.add("dark");
-    //     themeButton.textContent = "Thème ChainSaw Man";
-    // }
-    // });
-    const handleClick = ( theme ) => {
-        setTheme(theme);
-    }
+    
 
     return (
-        <div class="theme-container shadow-dark">
-            <button type="button" onCLick={() => handleClick('light')} class="theme-button light-button" alt="Light Mode">
+        <div className="theme-container shadow-dark">
+            <button id="1" type="button" onClick={() => setTheme('light')} className="theme-button light-button" alt="Light Mode">
             </button>
-            <button type="button" onCLick={() => handleClick('dark')} class="theme-button dark-button" alt="Dark Mode">
+            <button id="2" type="button" onClick={() => setTheme('dark')} className="theme-button dark-button" alt="Dark Mode">
             </button>
-            <button type="button" onCLick={() => handleClick('CSM')} class="theme-button CSM-button" alt="ChainSawMan Mode">
+            <button id="3" type="button" onClick={() => setTheme('CSM')} className="theme-button CSM-button" alt="ChainSawMan Mode">
             </button>
         </div>
     );

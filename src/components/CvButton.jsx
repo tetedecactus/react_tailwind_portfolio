@@ -10,7 +10,6 @@ function CvButton() {
 
   useEffect(() => {
     const onScroll = () => {
-
       // var distanceToBottom = document.body.offsetHeight - (window.innerHeight + window.scrollY);
 
       if (window.scrollY <= 700) {
@@ -25,9 +24,15 @@ function CvButton() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  return (
+  return (  
     <div className={`${style.container} ${style[theme]}`}>
-      <div className={scrolled ? "scrolled" : "cv-button  fixed z-10 font-bold px-4 py-4 rounded-md"}>
+      <div
+        className={
+          scrolled
+            ? "scrolled"
+            : "cv-button  fixed z-10 font-bold px-4 py-4 rounded-md"
+        }
+      >
         <a
           href={
             theme === "light"

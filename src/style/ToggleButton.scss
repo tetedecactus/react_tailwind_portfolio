@@ -1,17 +1,30 @@
-@import './LightDarkMode.scss';
+@import "./LightDarkMode.scss";
+
+.theme-container {
+  top: 8%;
+  left: 5%;
+  position: fixed;
+}
+
+.theme-button id {
+  transition: transform 3.5s ease-in-out;
+
+  // transform: translateX(10%);
+  transform: rotate(1440deg);
+}
 
 .theme-button {
   /* Create a square. */
   height: 30px;
   width: 30px;
-  
+
   /* Add a bit of spacing. */
   margin: 10px 5px 0 0;
 
   /* We don't want to show the left and right borders. */
   border-right: 0;
   border-left: 0;
-  
+
   /* And, remove the space between the top and bottom border. */
   padding: 0;
   /* Give a small box-shadow to create a border-like appearance around the buttons. */
@@ -19,19 +32,16 @@
 }
 
 .theme-button.light-button {
-
-    border-top: 15px solid map-get($light-mode, --bg-color);
-    border-bottom: 15px solid map-get($light-mode, --navbar-link-color);;
+  border-top: 15px solid map-get($light-mode, --bg-color);
+  border-bottom: 15px solid map-get($light-mode, --navbar-link-color);
 }
 
 .theme-button.dark-button {
-
   border-top: 15px solid map-get($dark-mode, --bg-navbar-color);
-  border-bottom: 15px solid map-get($dark-mode, --navbar-link-color);;
+  border-bottom: 15px solid map-get($dark-mode, --navbar-link-color);
 }
 
 .theme-button.CSM-button {
-
   border-top: 15px solid map-get($CSM-mode, --bg-color);
-  border-bottom: 15px solid map-get($CSM-mode, --navbar-link-color);;
+  border-bottom: 15px solid map-get($CSM-mode, --navbar-link-color);
 }
