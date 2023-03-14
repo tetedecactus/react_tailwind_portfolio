@@ -2,6 +2,7 @@ import images from "../../../module/Images";
 
 const projects = [
   {
+	id : 1,
     title: "Fdf File-De-Fer",
 
     imgUrl: images.fdf,
@@ -19,6 +20,7 @@ const projects = [
     lien: "https://github.com/tetedecactus/fdf",
   },
   {
+	id : 2,
     title: "Cub3D",
 
     imgUrl: images.cub3d,
@@ -34,6 +36,7 @@ const projects = [
     lien: "https://github.com/tetedecactus/cub3d",
   },
   {
+	id : 3,
     title: "Transcendence",
 
     imgUrl: images.transcendence_gif,

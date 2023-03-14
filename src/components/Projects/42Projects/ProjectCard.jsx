@@ -16,44 +16,8 @@ function ProjectCard({ title, imgUrl, description, language, lien }) {
   const { theme } = useContext(ThemeContext);
 
   return (
-    // <section className="container flex overflow-x-hidden">
-    //   <div className="mb-12">
-    //     <div className="justify-start">
-    //       <h2 className="project-title text-4xl font-bold justify-start mb-6">{title}</h2>
-    //     </div>
-    //     <div className="">
-    //       <img src={imgUrl} />
-    //     </div>
-    //     <div className="rounded-md h-auto absolute  mt-12 ml-12 ">
-    //       <p className="project-description font-bold text-justify p-6">
-    //         {description}
-    //       </p>
-    //     </div>
-    //     <div>
-    //       <p className="project-techno fixed">
-    //         {language}
-    //       </p>
-    //     </div>
-    //     <div className="flex">
-    //       <a href={lien}>
-    //         <img
-    //           className=" hover:translate-x-1.5 duration-300"
-    //           width={28}
-    //           src={
-    //             theme === "light"
-    //               ? images.githubicons_l
-    //               : theme === "dark"
-    //               ? images.githubicons_d
-    //               : images.githubicons_csm
-    //           }
-    //           alt="github"
-    //         />
-    //       </a>
-    //     </div>
-    //   </div>
-    // </section>
     <section className="container">
-      <h1 className="heading">Project Gallery</h1>
+      <h1 className="heading">42 Projects</h1>
       <Swiper
       effect={'coverflow'}
       grabCursor={ true }
@@ -75,12 +39,36 @@ function ProjectCard({ title, imgUrl, description, language, lien }) {
         clickable:true,
       }}
       modules={[EffectCoverflow, Pagination, Navigation]}
-      className="swiper_contaioner"
+      className="swiper_container"
       >
         <SwiperSlide>
-          <img src={images.fdf} alt="" />
+          <img className="flex items-center" src={images.fdf} alt="" />
+		  {/* <div className="rounded-md h-auto absolute  mt-12 ml-12 ">
+    	       <p className="project-description font-bold text-justify p-6">
+			   	"La représentation en relief d'un terrain est une pratique clef de la cartographie moderne.\n
+      			 Par exemple, en cette ère d'exploration spatiale, avoir une reproduction en trois\n
+				dimensions de la surface de Mars est un prérequis indispensable à la conquête de cette\n
+				planète.\n
+				Autre exemple, comparer des représentations en trois dimensions d'une zone où l'activité tectonique est importante permet de mieux comprendre ces phénomènes et leur\n +
+				évolution, donc d'être mieux préparé.\n"
+    	       </p>
+				<a href="https://github.com/tetedecactus/fdf">
+					<img
+					className=" hover:translate-x-1.5 duration-300"
+					width={28}
+					src={
+						theme === "light"
+						? images.githubicons_l
+						: theme === "dark"
+						? images.githubicons_d
+						: images.githubicons_csm
+					}
+					alt="github"
+					/>
+				</a>
+    	     </div> */}
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="flex items-center">
           <img src={images.transcendence_gif} alt="" />
         </SwiperSlide>
 

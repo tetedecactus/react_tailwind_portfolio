@@ -22,7 +22,7 @@ export default function ProjectTabs() {
         </h2>
         <Tabs className="justify-center py-4">
           <TabList className="flex items-center justify-center">
-            <Tab className="onglet-project text-2xl px-6 py-2 font-bold">
+            <Tab className="onglet-project text-2xl px-6 py-2 font-bold ">
               Projects 42
             </Tab>
             <Tab className="onglet-project text-2xl px-6 py-2 font-bold">
