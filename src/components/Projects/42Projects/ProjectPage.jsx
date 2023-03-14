@@ -10,10 +10,11 @@ function ProjectPage() {
     <section>
       <div className="pt-12 ">
         <div className="flex justify-center py-12">
+          <ProjectCard />
           {/* <Carousel autoSlide={false} autoSlideInterval={1000}> */}
-            {projects.map((project, index) => (
+            {/* {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
-            ))}
+            ))} */}
         </div>
       </div>
     </section>

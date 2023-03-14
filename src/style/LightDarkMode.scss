@@ -42,8 +42,12 @@ $light-mode: (
   --project-intro-color: #020001,
   --project-stroke-text-color: #020001,
   --onglet-projects-color: #dec79e,
-  --onglet-projects-bg-color: #adacaa,
-  --projects-type-text-color: #adacaa,
+  --onglet-projects-border-color: #020001,
+
+  --onglet-link-color-hover: #fff,
+  --onglet-link-bg-color-hover: #dec79e,
+  --onglet-link-border-color-hover: #020001,
+  --projects-type-text-color: #020001,
   //--PROJECT CARD
   --projectCard-title-color: #dec79e,
   --projectCard-description-color: #020001,
@@ -124,7 +128,10 @@ $dark-mode: (
   --project-intro-color: #fff,
   --project-stroke-text-color: #283035,
   --onglet-projects-color: #c72931,
-  --onglet-projects-bg-color: #283035,
+  --onglet-projects-border-color: #283035,
+  --onglet-link-color-hover: #fff,
+  --onlget-link-bg-color-hover: #283035,
+  --onglet-link-border-color-hover: #c72931,
   --projects-type-text-color: #fff,
   //--PROJECT CARD
   --projectCard-title-color: #c72931,
@@ -206,7 +213,10 @@ $CSM-mode: (
   --project-intro-color: #ffff0b,
   --project-stroke-text-color: #000,
   --onglet-projects-color: #64bd49,
-  --onglet-projects-bg-color: #586bb8,
+  --onglet-projects-border-color: #586bb8,
+  --onglet-link-color-hover: #fe5455,
+  --onglet-link-bg-color-hover: #586bb8,
+  --onglet-link-border-color-hover: #ffff0b,
   --projects-type-text-color: #ffff0b,
   //--PROJECT CARD
   --projectCard-title-color: #586bb8,

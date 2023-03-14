@@ -18,7 +18,7 @@ export default function Carousel({
     const slideInterval = setInterval(next, autoSlideInterval)
     return () => clearInterval(slideInterval)
   }, [])
-  return (
+    return (
     <div className="overflow-hidden relative">
       <div
         className="flex transition-transform ease-out duration-500"
@@ -31,6 +31,7 @@ export default function Carousel({
           onClick={prev}
           className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
         >
+          
           <ChevronLeft size={40} />
         </button>
         <button

@@ -20,24 +20,19 @@ export default function ProjectTabs() {
         <h2 className="projects-title  my-20 text-6xl font-extrabold text-center">
           My Projects
         </h2>
-        <p className="project-intro  text-center">
-          Currently, I am working on developing a mobile app using React Native
-          and integrating it with Firebase. Additionally, I am studying
-          algorithms and data structures to improve my problem-solving skills.{" "}
-        </p>
-        <Tabs className="justify-center py-12">
+        <Tabs className="justify-center py-4">
           <TabList className="flex items-center justify-center">
-            <Tab className="onglet-project px-6 py-2 font-bold">
+            <Tab className="onglet-project text-2xl px-6 py-2 font-bold">
               Projects 42
             </Tab>
-            <Tab className="onglet-project px-6 py-2 font-bold">
+            <Tab className="onglet-project text-2xl px-6 py-2 font-bold">
               Personnal Projects
             </Tab>
-            <Tab className="onglet-project px-6 py-2 font-bold">
+            <Tab className="onglet-project text-2xl px-6 py-2 font-bold">
               Free Lance Projects
             </Tab>
           </TabList>
-          <TabPanel className="flex items-center justify-center">
+          <TabPanel className="flex items-center text-xl font-bold justify-center">
             <p className="projects-text items-center text-justify px-20 py-12">
               Les projet fait a 42 Quebec sont des projets est développée par
               une équipe pédagogique qualifiée, de sorte à permettre une courbe
@@ -50,7 +45,13 @@ export default function ProjectTabs() {
             </p>
             <ProjectPage />
           </TabPanel>
-          <TabPanel></TabPanel>
+          <TabPanel>
+          <p className="project-intro  text-center">
+          Currently, I am working on developing a mobile app using React Native
+          and integrating it with Firebase. Additionally, I am studying
+          algorithms and data structures to improve my problem-solving skills.{" "}
+          </p>
+          </TabPanel>
           <TabPanel></TabPanel>
         </Tabs>
       </div>

@@ -12,20 +12,27 @@ import React from "react";
 import "../style/ToggleButton.scss";
 import ProjectTabs from "./Projects/Projects";
 import ToggleButton from "./ToggleButton";
+
 function HomePage() {
   // class Homepage extends React.Component {
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (
     <section id="themeButton" className={theme}>
-      <NavBar />
-      <SocialIcons />
-      <About />
-      <CvButton />
-      <ProjectTabs />
-      <ContactForm />
-      <ToggleButton />
-      <Footer />
+      <div className="snap-mandatory snap-y">
+        <NavBar />
+        <SocialIcons />
+        <About />
+        <CvButton />
+        <div className="snap-start">
+          <ProjectTabs/>
+        </div>
+        <div className="snap-start">
+          <ContactForm />
+          <ToggleButton />
+          <Footer />
+        </div>
+      </div>
     </section>
   );
 }

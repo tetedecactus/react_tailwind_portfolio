@@ -79,9 +79,10 @@
     background-color: transparent;
   }
   .onglet-project:hover {
-    color: map-get($light-mode, --onglet-projects-color);
-    border-bottom: 3px solid map-get($light-mode, --onglet-projects-bg-color);
+    color: map-get($light-mode, --onglet-link-color-hover);
+    border: 3px solid map-get($light-mode, --onglet-projects-border-color);
     transition: transform 0.4s ease-in-out;
+    background-color: map-get($light-mode, --onglet-link-bg-color-hover);
   }
   .projects-text {
     color: map-get($light-mode, --projects-type-text-color);
@@ -108,8 +109,9 @@
     background-color: transparent;
   }
   .onglet-project:hover {
-    color: map-get($dark-mode, --onglet-projects-color);
-    border-bottom: 3px solid map-get($dark-mode, --onglet-projects-bg-color);
+    color: map-get($dark-mode, --onglet-link-color-hover);
+    border: 3px solid map-get($dark-mode, --onglet-link-border-color-hover);
+    background-color: map-get($dark-mode, --onglet-link-bg-color-hover);
     
     transition: transform 0.4s ease-in-out;
   }
@@ -138,9 +140,10 @@
     background-color: transparent;
   }
   .onglet-project:hover {
-    color: map-get($CSM-mode, --onglet-projects-color);
-    border-bottom: 3px solid map-get($CSM-mode, --onglet-projects-bg-color);
+    color: map-get($CSM-mode, --onglet-link-color-hover);
+    border: 3px solid map-get($CSM-mode, --onglet-link-border-color-hover);
     transition: transform 0.4s ease-in-out;
+    background-color: map-get($CSM-mode, --onglet-link-bg-color-hover);
   }
   .projects-text {
     color: map-get($CSM-mode, --projects-type-text-color);
