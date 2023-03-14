@@ -15,8 +15,8 @@ export default function ProjectTabs() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <section id="projects" className="project-tabs-page h-auto m-auto overflow-visible mt-8">
-      <div className="container py-8 lg:py-16 px-16 mx-auto  overflox-visible relative ">
+    <section id="projects" className="project-tabs-page h-auto m-auto overflow-visible">
+      <div className="container  lg:py-16 px-16 mx-auto  overflox-visible relative ">
         <h2 className="projects-title  my-20 text-6xl font-extrabold text-center">
           My Projects
         </h2>
