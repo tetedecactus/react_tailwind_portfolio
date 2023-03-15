@@ -95,6 +95,7 @@ textarea:focus {
     background-color: map-get($dark-mode, --bg-cv-button-color);
   }
   .send-button:hover {
+    border: 4px solid #FEFAE0;
     color: map-get($dark-mode, --cv-button-text-color-hover);
     background-color: map-get($dark-mode, --bg-cv-button-color-hover);
   }

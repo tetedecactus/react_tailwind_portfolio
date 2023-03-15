@@ -106,7 +106,7 @@ function ContactForm() {
           </div>
           <button
             type="submit"
-            className="send-button py-4 px-4 text-sm font-medium font-bold text-center rounded-lg"
+            className="send-button py-4 px-4 text-sm font-large font-bold text-center rounded-lg"
           >
             Send message
           </button>
