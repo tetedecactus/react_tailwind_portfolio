@@ -48,6 +48,13 @@ $light-mode: (
   --onglet-link-bg-color-hover: #dec79e,
   --onglet-link-border-color-hover: #020001,
   --projects-type-text-color: #020001,
+  //CAROUSEL
+  --projects-overlay-bg-color: #adacaa,
+  --heading-color: #020001,
+  --title-projects-color: #FBFFFE,
+  --title-projects-span-color: #020001,
+  --description-projects-color: #020001,
+  --img-container-border-color: #020001,
   //--PROJECT CARD
   --projectCard-title-color: #dec79e,
   --projectCard-description-color: #020001,
@@ -141,6 +148,13 @@ $dark-mode: (
   --projectCard-description-border-color: #633E29,
   --projectCard-techno-color: #633E29,
 
+  //CAROUSEL
+  --projects-overlay-bg-color: #633E29,
+  --heading-color: #0A210F,
+  --title-projects-color: #FEFAE0,
+  --title-projects-span-color: #0A210F,
+  --description-projects-color: #FEFAE0,
+  --img-container-border-color: #FEFAE0,
   //  CV BUTTON
   --bg-cv-button-color: #0A210F,
   --cv-button-text-color: #FEFAE0,
@@ -225,6 +239,14 @@ $CSM-mode: (
   --projectCard-description-bg-color: #586bb8,
   --projectCard-description-border-color: #ffff0b,
   --projectCard-techno-color: #586bb8,
+
+  //CAROUSEL
+  --projects-overlay-bg-color: #586bb8,
+  --heading-color: #64bd49,
+  --title-projects-color: #fe5455,
+  --title-projects-span-color: #ffff0b,
+  --description-projects-color: #64bd49,
+  --img-container-border-color: #ffff0b,
 
   // --connect-button-bg-color
   //  CV BUTTON

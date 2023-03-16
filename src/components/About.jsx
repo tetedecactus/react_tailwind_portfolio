@@ -54,9 +54,9 @@ function About() {
     <section className={`${style.container} ${style[theme]}`}>
       <div
         id="about"
-        className="about-page container justify-center lg:relative mb-20 py-8 m-auto px-10 md:px-12 xl:px-6 h-full overflow-x-hidden"
+        className="about-page container justify-center lg:relative mb-20 py-8 mx-10 px-10 px-10 sm:px-12 md:px-12 xl:px-6 h-full overflow-x-hidden"
       >
-        <div className="flex flex-row flex-wrap sm:flex-wrap justify-center sm:ml-12 lg:ml-20 relative h-full">
+        <div className="flex flex-row flex-wrap sm:flex-wrap justify-center ml-12 sm:ml-12 lg:ml-20 relative h-full">
           <img
             className="img-component-5 fixed"
             atl=""
@@ -79,7 +79,7 @@ function About() {
                 : images.bg_component_CSM_gy
             }
           ></img>
-          <div className="lg:w-1/2 ">
+          <div className="lg:w-1/2">
             <span className="tagline">Welcome to my Portfolio</span>
             <img
               className="img-component-1 fixed "
@@ -112,7 +112,7 @@ function About() {
               {`Hi I'm a Programming Student  / `}
               <span className="wrap">{text}</span>
             </h1>
-            <p className="intro text-justify md:text-lg lg:text-xl w-auto h-auto relative z-10 ">
+            <p className="intro text-justify text-lg sm:text-lg md:text-xl lg:text-2xl h-auto relative z-10 ">
               {" "}
               Hello and welcome! My name is Olivier Labrecque-Lacasse, and I am
               a front-end web development intern. I am excited to be part of
@@ -129,7 +129,7 @@ function About() {
             </p>
             <div>
               <a href={"#contact"}>
-                <button className="connect-button relative border font-bold rounded-md px-4 py-4 mt-6 mr-6">
+                <button className="connect-button relative text-lg sm:text-lg md:text-xl lg:text-2xl border font-bold rounded-md px-4 py-4 mt-6 mr-6">
                   Let's Connect
                 </button>
               </a>
@@ -144,7 +144,7 @@ function About() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="connect-button relative z-1 border font-bold rounded-md px-4 py-4 mt-6">
+                <button className="connect-button relative text-lg sm:text-lg md:text-xl lg:text-2xl z-1 border font-bold rounded-md px-4 py-4 mt-6">
                   DOWNLOAD C.V
                 </button>
               </a>
